@@ -25,13 +25,26 @@ footer{
 
 p{
     text-align: center;
-    font-family: sans-serif;
-    font-family: 12px;
-    
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+     
 }
 
 h2{
     font-family: 13px;
     text-align: center;
     
+}
+
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
