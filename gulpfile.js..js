@@ -10,3 +10,5 @@ function watchFiles() {
 
 exports.watch = watchFiles;
 exports.default = watchFiles;
+
+gulp watch
