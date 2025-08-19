@@ -28,6 +28,11 @@ p{
     font-family: sans-serif;
     font-family: 12px;
     
+    
+}
+
+h1{
+    text-align: center;
 }
 
 h2{
@@ -45,7 +50,3 @@ p{
     
 }
 
-h4{
-    text-align: center;
-    
-}
