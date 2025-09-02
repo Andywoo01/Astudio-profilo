@@ -28,7 +28,10 @@ function watchFiles() {
         cb();
     });
     watch(['javascript/**/*.js'], minifyJs);
-    watch(['images/**/*'], copyImages);
+    watch(['images/**/*'], minifyJs);
+    watch(['contact/**/*'], minifyJs);
+    watch(['about/**/*'], minifyJs);
+
 }
 
 exports.minify = minifyJs;
