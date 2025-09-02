@@ -15,13 +15,20 @@ function minifyJs() {
         .pipe(dest('dist/js'));
 }
 
-// Simple watch task: watches all CSS and JS files in the project
+// Dummy image copy task (replace with your real task if needed)
+function copyImages(cb) {
+    console.log('Image file changed!');
+    cb();
+}
+
+// Simple watch task: watches all CSS, JS, and image files in the project
 function watchFiles() {
     watch(['**/*.css'], function(cb) {
         console.log('A CSS file changed!');
         cb();
     });
     watch(['javascript/**/*.js'], minifyJs);
+    watch(['images/**/*'], copyImages);
 }
 
 exports.minify = minifyJs;
