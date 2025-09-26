@@ -1,6 +1,7 @@
-const { src, dest, watch } = require('gulp');
+const { src, dest, watch, series, parallel } = require('gulp');
 const minify = require('gulp-minify');
 const plumber = require('gulp-plumber');
+const browserSync = require('browser-sync').create();
 
 // Minify JS files
 function minifyJs() {
@@ -12,7 +13,8 @@ function minifyJs() {
             },
             noSource: true
         }))
-        .pipe(dest('dist/js'));
+        .pipe(dest('dist/js'))
+        .pipe(browserSync.stream());
 }
 
 // Dummy image copy task (replace with your real task if needed)
@@ -21,19 +23,29 @@ function copyImages(cb) {
     cb();
 }
 
-// Simple watch task: watches all CSS, JS, and image files in the project
-function watchFiles() {
-    watch(['**/*.css'], function(cb) {
-        console.log('A CSS file changed!');
-        cb();
+// Serve and reload with BrowserSync
+function serve(cb) {
+    browserSync.init({
+        server: {
+            baseDir: './'
+        },
+        port: 3000,
+        startPath: 'homepage.html'
     });
-    watch(['javascript/**/*.js'], minifyJs);
-    watch(['images/**/*'], minifyJs);
-    watch(['contact/**/*'], minifyJs);
-    watch(['about/**/*'], minifyJs);
+    cb();
+}
 
+// Watch files and reload browser on changes
+function watchFiles() {
+    watch(['**/*.css']).on('change', browserSync.reload);
+    watch(['javascript/**/*.js'], minifyJs);
+    watch(['images/**/*'], browserSync.reload);
+    watch(['contact/**/*'], browserSync.reload);
+    watch(['about/**/*'], browserSync.reload);
+    watch(['*.html'], browserSync.reload);
 }
 
 exports.minify = minifyJs;
-exports.watch = watchFiles;
-exports.default = watchFiles;
+exports.serve = serve;
+exports.watch = series(serve, watchFiles);
+exports.default = series(serve, watchFiles);
