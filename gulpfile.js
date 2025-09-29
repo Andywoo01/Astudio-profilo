@@ -30,7 +30,8 @@ function serve(cb) {
             baseDir: './'
         },
         port: 3000,
-        startPath: 'homepage.html'
+        startPath: 'homepage.html',
+        browser: 'chrome'
     });
     cb();
 }
@@ -46,6 +47,6 @@ function watchFiles() {
 }
 
 exports.minify = minifyJs;
-exports.serve = serve;
+exports.serve = serve; 
 exports.watch = series(serve, watchFiles);
 exports.default = series(serve, watchFiles);
