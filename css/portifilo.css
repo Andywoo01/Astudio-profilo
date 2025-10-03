@@ -43,12 +43,21 @@ h4{
 }
 
 h3{
-    text-align: center;
+    
+    padding-left: 5
 }
 
 .intro-andy{
 text-align: center;
 font-family:'Open Sans', sans-serif;
-padding-left:200px;
-padding-right:300px;
+padding-left:550px;
+padding-right:550px;
+width: 350px;
+}
+
+
+.contactfoam{
+padding-left: 500px;
+    
+
 }
