@@ -85,6 +85,12 @@ p {
     line-height: 1.8;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .intro-andy {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
