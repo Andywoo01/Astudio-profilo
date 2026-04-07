@@ -110,6 +110,71 @@ img {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
+}
+
+.contactfoam form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contactfoam label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+.contactfoam input,
+.contactfoam textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.contactfoam textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contactfoam button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactfoam button[type="submit"] {
+    background-color: #333;
+    color: white;
+}
+
+.contactfoam button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.contactfoam button[type="reset"] {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.contactfoam button[type="reset"]:hover {
+    background-color: #e0e0e0;
 }
 
 footer {
