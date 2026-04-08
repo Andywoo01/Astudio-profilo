@@ -14,7 +14,6 @@ body {
 
 header {
     padding: 20px;
-    border-bottom: 1px solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,9 +56,10 @@ nav img {
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     padding: 20px;
+    min-height: auto;
 }
 
 h2, h3, h4 {
@@ -89,6 +89,13 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.hero-image {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .intro-andy {
@@ -183,7 +190,7 @@ footer {
     font-size: 12px;
     padding: 30px 20px;
     border-top: 1px solid #eee;
-    margin-top: 50px;
+    margin-top: 0;
 }
 
 .footer-links {
@@ -234,6 +241,7 @@ footer {
     
     main {
         padding: 40px 20px;
+        min-height: auto;
     }
     
     .intro-andy {
@@ -265,6 +273,7 @@ footer {
     
     main {
         padding: 60px 40px;
+        min-height: auto;
     }
     
     .intro-andy {
@@ -284,6 +293,13 @@ footer {
 @media (max-width: 767px) {
     header {
         align-items: center;
+    }
+
+    main {
+        min-height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .menu-toggle {
