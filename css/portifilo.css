@@ -115,6 +115,19 @@ img {
     padding: 60px 20px;
 }
 
+#about {
+    background: #000;
+    color: #fff;
+}
+
+#about a,
+#about h2,
+#about h3,
+#about h4,
+#about p {
+    color: #fff;
+}
+
 .section-heading {
     text-align: center;
     font-size: 28px;
