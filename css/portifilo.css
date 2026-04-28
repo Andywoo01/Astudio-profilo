@@ -149,6 +149,12 @@ img {
     background: #fff;
 }
 
+.work-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
