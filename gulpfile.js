@@ -44,6 +44,8 @@ function watchFiles() {
     watch(['contact/**/*'], browserSync.reload);
     watch(['about/**/*'], browserSync.reload);
     watch(['*.html'], browserSync.reload);
+     
+    
 }
 
 exports.minify = minifyJs;
