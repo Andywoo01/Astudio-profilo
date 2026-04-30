@@ -61,6 +61,59 @@ nav img {
     border-radius: 50%;
 }
 
+.hero {
+    min-height: 60vh;
+    padding: 140px 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+}
+
+.hero-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.hero-label {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+    margin-bottom: 16px;
+    color: #777;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 18px;
+    line-height: 1.1;
+    color: #222;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    font-size: 18px;
+    color: #444;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.cta-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
 main {
     width: 100%;
     margin: 0;
