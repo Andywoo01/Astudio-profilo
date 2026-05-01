@@ -8,6 +8,30 @@
     <title>|Andy UI/UX Design|About</title>
     <link rel="stylesheet" type="text/css" href="../css/portifilo.css">
     <script src="../javascript/astudio.js"></script>
+    <style>
+        .about-grid{
+            display:flex;
+            gap:2rem;
+            align-items:flex-start;
+            flex-wrap:wrap;
+        }
+        .about-grid > div{
+            flex:1 1 300px;
+        }
+        .about-grid img{
+            max-width:100%;
+            height:auto;
+            display:block;
+            border-radius:4px;
+            margin-top:75px;
+        }
+        @media (max-width:600px){
+            .about-grid{flex-direction:column;}
+        }
+        .hidden-heading{
+            visibility:hidden;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,13 +49,17 @@
             <a href="https://www.pinterest.com/Andyuiuxdesign/">Pinterest</a>
         </nav>
     </header>
-    <h4>about</h4>
-<div class="intro-andy">
-    <p>
-i am currently livening  in California in the south bay area my first introduction in  to the graphic design   when i was in high school in my sophomore year in high school and in conjunction  to fine arts after graduating  high school i went  on to study at  local community
- collage DeAnza collage took a lot  of art design 
- photography course  after obtaining  certificate of design and photography  i went through a lot of paid and unpaid workshops and trying to reinforce  for i have learn in those workshop and apply it trough my personal work i don't hold a bachelors of fine art  but i get a really  good sense what good design is</p>
+    <h4 class="hidden-heading">about</h4>
+<div class="about-grid">
+    <div>
+        <img src="../images/Andy_01.png" alt="Andy">
     </div>
+    <div>
+        <h3>Founder of andyuiuxdesign</h3>
+        <p>i am currently livening in California in the south bay area my first introduction in to the graphic design when i was in high school in my sophomore year in high school and in conjunction to fine arts after graduating high school i went on to study at local community</p>
+        <p>collage DeAnza collage took a lot of art design photography course after obtaining certificate of design and photography i went through a lot of paid and unpaid workshops and trying to reinforce for i have learn in those workshop and apply it trough my personal work i don't hold a bachelors of fine art but i get a really good sense what good design is</p>
+    </div>
+</div>
     <footer>
            <div class="footer-links">
             <a href="../homepage.html">Home</a>
