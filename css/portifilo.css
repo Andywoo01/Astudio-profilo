@@ -209,6 +209,23 @@ img {
     align-items: start;
 }
 
+.about-link {
+    display: table;
+    margin: 28px auto 0;
+    padding: 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.about-link:hover {
+    background: #fff;
+    color: #000;
+}
+
 .intro-andy {
     text-align: center;
     line-height: 29px;
