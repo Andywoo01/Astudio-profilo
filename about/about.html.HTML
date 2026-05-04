@@ -36,6 +36,52 @@
             margin-top:0.75rem;
             font-weight:600;
         }
+        .about-contact{
+            max-width:600px;
+            margin:60px auto 0;
+            padding:20px;
+            text-align:center;
+        }
+        .about-contact form{
+            display:flex;
+            flex-direction:column;
+            gap:15px;
+            margin-top:20px;
+        }
+        .about-contact label{
+            display:flex;
+            flex-direction:column;
+            gap:5px;
+            text-align:left;
+        }
+        .about-contact input,
+        .about-contact textarea{
+            padding:10px;
+            border:1px solid #ddd;
+            border-radius:4px;
+            font-size:14px;
+            font-family:'Open Sans', sans-serif;
+        }
+        .about-contact textarea{
+            min-height:120px;
+            resize:vertical;
+        }
+        .about-contact button{
+            padding:10px 20px;
+            border:none;
+            border-radius:4px;
+            font-size:14px;
+            cursor:pointer;
+        }
+        .about-contact button[type="submit"]{
+            background-color:#333;
+            color:#fff;
+        }
+        .about-contact button[type="reset"]{
+            background-color:#f0f0f0;
+            border:1px solid #ddd;
+            color:#333;
+        }
     </style>
 </head>
 <body>
@@ -66,6 +112,32 @@
         <p>collage DeAnza collage took a lot of art design photography course after obtaining certificate of design and photography i went through a lot of paid and unpaid workshops and trying to reinforce for i have learn in those workshop and apply it trough my personal work i don't hold a bachelors of fine art but i get a really good sense what good design is</p>
     </div>
 </div>
+    <section class="about-contact" id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to contact me. I will respond to you no later than two days.</p>
+        <form action="https://formspree.io/f/mwprbjgp" method="POST">
+            <label>
+                Firstname:
+                <input type="text" name="firstname">
+            </label>
+            <label>
+                Lastname:
+                <input type="text" name="lastname">
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Message:
+                <textarea name="message"></textarea>
+            </label>
+            <div class="form-buttons">
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
     <footer>
            <div class="footer-links">
             <a href="../homepage.html">Home</a>
