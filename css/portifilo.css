@@ -200,6 +200,43 @@ img {
     display: block;
 }
 
+#process {
+    background: #f8f8f8;
+}
+
+.process-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.process-step {
+    padding: 22px;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.process-number {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #777;
+}
+
+.process-step h3 {
+    text-align: left;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.process-step p {
+    color: #555;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
