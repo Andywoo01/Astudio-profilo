@@ -39,7 +39,8 @@
     .video-row p{margin:6px 0 0}
     .video-row video{width:100%;height:auto;border-radius:8px;display:block}
 
-    .back{display:inline-block;margin:20px 0;padding:8px 12px;background:#f3f4f6;border-radius:10px;text-decoration:none;color:inherit}
+    .back{display:inline-flex;align-items:center;justify-content:center;width:990px;max-width:100%;height:300px;margin:20px 0;background:#000;border-radius:0;text-decoration:none;color:#fff;font-size:45px;font-weight:700;text-align:center}
+    .back:hover,.back:focus-visible{background:#222}
 
     footer.footer-links{margin-top:36px;padding:18px 0;border-top:1px solid #f0f2f5;color:var(--muted);display:flex;flex-wrap:wrap;gap:12px;align-items:center}
     footer.footer-links a{color:var(--muted);text-decoration:none}
@@ -172,7 +173,7 @@
         </article>
       </section>
 
-      <a class="back" href="../tutorials.html">Back to tutorials</a>
+      <a class="back" href="../tutorials.html" aria-label="Back to tutorials" title="Back to tutorials">Back</a>
     </main>
 
     <footer class="footer-links">
