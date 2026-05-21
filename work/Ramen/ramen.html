@@ -9,10 +9,136 @@
     <link rel="stylesheet" type="text/css" href="../../css/portifilo.css">
     <script src="../../javascript/astudio.js"></script>
     <style>
+        .ramen-main {
+            max-width: 620px;
+            margin: 0 auto;
+            padding: 0 0 64px;
+            background: #fff;
+        }
+
+        .ramen-hero {
+            min-height: 275px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #d9d9d9;
+            text-align: center;
+        }
+
+        .ramen-hero h2 {
+            font-size: 32px;
+            color: #000;
+            margin: 0;
+        }
+
+        .ramen-content {
+            padding: 28px 64px 0;
+        }
+
+        .ramen-section {
+            margin-bottom: 32px;
+        }
+
+        .ramen-section h3 {
+            margin: 0 0 8px;
+            font-size: 14px;
+            color: #191919;
+        }
+
+        .ramen-section p,
+        .ramen-section li {
+            font-size: 11px;
+            line-height: 1.45;
+            color: #191919;
+        }
+
+        .ramen-section ul {
+            margin: 8px 0 0 16px;
+            padding: 0;
+        }
+
+        .persona {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 36px;
+            align-items: start;
+        }
+
+        .persona figure,
+        .ramen-visuals figure {
+            margin: 0;
+        }
+
         .persona img {
             width: 298px;
             height: 223px;
+            max-width: 100%;
             object-fit: cover;
+            display: block;
+        }
+
+        .persona figcaption,
+        .ramen-visuals figcaption {
+            margin-top: 8px;
+            font-size: 10px;
+            color: #191919;
+            text-align: center;
+        }
+
+        .ramen-visuals {
+            display: grid;
+            grid-template-columns: 120px 180px;
+            gap: 28px;
+            align-items: start;
+        }
+
+        .ramen-swatch {
+            display: grid;
+            gap: 8px;
+        }
+
+        .swatch {
+            width: 42px;
+            height: 42px;
+            border: 1px solid #191919;
+        }
+
+        .swatch.black {
+            background: #000;
+        }
+
+        .swatch.white {
+            background: #fff;
+        }
+
+        .ramen-bowl {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ramen-broth {
+            width: 130px;
+            height: 175px;
+            object-fit: cover;
+            display: block;
+            margin: 26px auto 0;
+        }
+
+        @media (max-width: 720px) {
+            .ramen-main {
+                max-width: 100%;
+            }
+
+            .ramen-content {
+                padding: 24px 20px 0;
+            }
+
+            .persona,
+            .ramen-visuals {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -33,29 +159,55 @@
         </nav>
     </header>
 
-    <main>
-        <section class="section">
-            <h2 class="section-heading">Ramen</h2>
+    <main class="ramen-main">
+        <section class="ramen-hero">
+            <h2>Ramen</h2>
         </section>
+
+        <div class="ramen-content">
+            <section class="ramen-section">
+                <h3>Problem Statement</h3>
+                <p>The chef does not have a permanent kitchen and currently rents a temporary kitchen space. The business needs a stronger online presence to drive more traffic and help customers understand when ramen is available.</p>
+                <ul>
+                    <li>No permanent location to establish recognition.</li>
+                    <li>Expensive and inconsistent kitchen rentals.</li>
+                    <li>Hard to market the business locally.</li>
+                    <li>Limited tools to communicate menu updates or availability.</li>
+                </ul>
+            </section>
+
+            <section class="ramen-section">
+                <h3>Persona</h3>
+                <div class="persona">
+                    <figure>
+                        <img src="Mike Chen.jpg" alt="Mike Chen">
+                        <figcaption>Mike Chen</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="Dainel kim.jpg" alt="Dainel Kim">
+                        <figcaption>Dainel Kim</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="ramen-section">
+                <h3>Restaurant</h3>
+                <div class="ramen-visuals">
+                    <div class="ramen-swatch" aria-label="Color palette">
+                        <span class="swatch black"></span>
+                        <span class="swatch white"></span>
+                    </div>
+                    <figure>
+                        <img class="ramen-bowl" src="RAMEN.jpg" alt="A bowl of ramen">
+                        <figcaption>Ramen uiux</figcaption>
+                    </figure>
+                </div>
+                <figure>
+                    <img class="ramen-broth" src="Ramen-Broth-35.jpg" alt="Ramen broth being poured">
+                </figure>
+            </section>
+        </div>
     </main>
-<h1>Problem Statement</h1>
-<p>
-so let start with the problem right so the chef is  use does' not have a real kitchen a he i currently  rent a  temopery kiciten  he  want to drive  more traffic
-No permanent location to establish recognition
- Expensive and inconsistent kitchen rentals
- Hard to market the business locally
- Limited tools to communicate menu updates or availability</p>
- <h1>persona</h1>
- <section class="persona">
-    <figure>
-        <img src="Mike Chen.jpg" alt="Mike Chen">
-        <figcaption>Mike Chen</figcaption>
-    </figure>
-    <figure>
-        <img src="Dainel kim.jpg" alt="Dainel Kim">
-        <figcaption>Dainel Kim</figcaption>
-    </figure>
-</section>
     <footer class="footer-links">
         <a href="../../index.html">Home</a>
         <a href="../work.html">Work</a>
