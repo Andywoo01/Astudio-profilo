@@ -70,9 +70,7 @@ footer a {
 
 .hero-image {
     min-height: 360px;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)),
-        url("RAMEN.jpg") center / cover;
+    background: #ffffff;
 }
 
 .hero-copy {
