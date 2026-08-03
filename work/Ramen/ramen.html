@@ -2,223 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Andy woo">
-    <meta name="keywords" content="ramen, work, ui ux design, portfolio, web design">
+    <meta name="author" content="Andy Woo">
+    <meta name="keywords" content="ramen, ui ux design, portfolio, case study, wireframe, journey map">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ramen UI/UX process case study with research, journey map, typography, sitemap, and wireframes.">
     <title>Andyuiuxdesign | Ramen</title>
-    <link rel="stylesheet" type="text/css" href="../../css/portifilo.css">
-    <script src="../../javascript/astudio.js"></script>
-    <style>
-        .ramen-main {
-            max-width: 620px;
-            margin: 0 auto;
-            padding: 0 0 64px;
-            background: #fff;
-        }
-
-        .ramen-hero {
-            min-height: 275px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #d9d9d9;
-            text-align: center;
-        }
-
-        .ramen-hero h2 {
-            font-size: 32px;
-            color: #000;
-            margin: 0;
-        }
-
-        .ramen-content {
-            padding: 28px 64px 0;
-        }
-
-        .ramen-section {
-            margin-bottom: 32px;
-        }
-
-        .ramen-section h3 {
-            margin: 0 0 8px;
-            font-size: 14px;
-            color: #191919;
-        }
-
-        .ramen-section p,
-        .ramen-section li {
-            font-size: 11px;
-            line-height: 1.45;
-            color: #191919;
-        }
-
-        .ramen-section ul {
-            margin: 8px 0 0 16px;
-            padding: 0;
-        }
-
-        .persona {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 36px;
-            align-items: start;
-        }
-
-        .persona figure,
-        .ramen-visuals figure {
-            margin: 0;
-        }
-
-        .persona img {
-            width: 298px;
-            height: 223px;
-            max-width: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .persona figcaption,
-        .ramen-visuals figcaption {
-            margin-top: 8px;
-            font-size: 10px;
-            color: #191919;
-            text-align: center;
-        }
-
-        .ramen-visuals {
-            display: grid;
-            grid-template-columns: 120px 180px;
-            gap: 28px;
-            align-items: start;
-        }
-
-        .ramen-swatch {
-            display: grid;
-            gap: 8px;
-        }
-
-        .swatch {
-            width: 42px;
-            height: 42px;
-            border: 1px solid #191919;
-        }
-
-        .swatch.black {
-            background: #000;
-        }
-
-        .swatch.white {
-            background: #fff;
-        }
-
-        .ramen-bowl {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .ramen-broth {
-            width: 130px;
-            height: 175px;
-            object-fit: cover;
-            display: block;
-            margin: 26px auto 0;
-        }
-
-        @media (max-width: 720px) {
-            .ramen-main {
-                max-width: 100%;
-            }
-
-            .ramen-content {
-                padding: 24px 20px 0;
-            }
-
-            .persona,
-            .ramen-visuals {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../normalize.css-master/normalize.css">
+    <link rel="stylesheet" href="ramen.css">
+    <script src="../../javascript/astudio.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Andyuiuxdesign</h1>
-        <button class="menu-toggle">Menu</button>
-        <nav id="nav-menu">
+    <header class="site-header">
+        <a class="brand" href="../../index.html">Andyuiuxdesign</a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+        <nav id="nav-menu" aria-label="Primary navigation">
             <a href="../../index.html">Home</a>
             <a href="../work.html">Work</a>
             <a href="../../about/about.html.HTML">About</a>
             <a href="../../contct/contact.html">Contact</a>
             <a href="../../tutorials/tutorials.html">Tutorials</a>
-            <a href="https://github.com/Andywoo01">GitHub</a>
-            <a href="https://www.instagram.com/andyuiuxdesign/">Instagram</a>
-            <a href="https://www.linkedin.com/in/andyuserexperience/">LinkedIn</a>
-            <a href="https://www.pinterest.com/Andyuiuxdesign/">Pinterest</a>
         </nav>
     </header>
 
-    <main class="ramen-main">
-        <section class="ramen-hero">
-            <h2>Ramen</h2>
+    <main>
+        <section class="case-hero">
+            <div class="hero-image" aria-hidden="true"></div>
+            <div class="hero-copy">
+                <p>UI/UX case study</p>
+                <h1>Ramen</h1>
+            </div>
         </section>
 
-        <div class="ramen-content">
-            <section class="ramen-section">
-                <h3>Problem Statement</h3>
-                <p>The chef does not have a permanent kitchen and currently rents a temporary kitchen space. The business needs a stronger online presence to drive more traffic and help customers understand when ramen is available.</p>
+        <section class="intro-grid section-pad">
+            <aside class="tools">
+                <h2>Tools</h2>
                 <ul>
-                    <li>No permanent location to establish recognition.</li>
-                    <li>Expensive and inconsistent kitchen rentals.</li>
-                    <li>Hard to market the business locally.</li>
-                    <li>Limited tools to communicate menu updates or availability.</li>
+                    <li>User Research</li>
+                    <li>Wireframe</li>
+                    <li>Typography</li>
+                    <li>Figma</li>
+                    <li>Sketch</li>
+                    <li>Color Theory</li>
                 </ul>
-            </section>
+            </aside>
 
-            <section class="ramen-section">
-                <h3>Persona</h3>
-                <div class="persona">
-                    <figure>
-                        <img src="Mike Chen.jpg" alt="Mike Chen">
-                        <figcaption>Mike Chen</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="Dainel kim.jpg" alt="Dainel Kim">
-                        <figcaption>Dainel Kim</figcaption>
-                    </figure>
-                </div>
-            </section>
+            <article class="problem">
+                <h2>The Problem</h2>
+                <p>
+                    Ramen chef currently operates without a permanent kitchen and relies on renting
+                    temporary kitchen spaces. Because of this setup, the business struggles with low
+                    brand visibility, limited customer trust, inconsistent customer traffic, and a
+                    weak online ordering experience.
+                </p>
+            </article>
+        </section>
 
-            <section class="ramen-section">
-                <h3>Restaurant</h3>
-                <div class="ramen-visuals">
-                    <div class="ramen-swatch" aria-label="Color palette">
-                        <span class="swatch black"></span>
-                        <span class="swatch white"></span>
-                    </div>
-                    <figure>
-                        <img class="ramen-bowl" src="RAMEN.jpg" alt="A bowl of ramen">
-                        <figcaption>Ramen uiux</figcaption>
-                    </figure>
-                </div>
+        <section class="journey section-pad">
+            <h2>Journey Map</h2>
+            <img src="Customer Journey Map (Copy).jpg" alt="Ramen customer journey map">
+        </section>
+
+        <section class="type-color section-pad">
+            <h2>Typography and Color</h2>
+            <div class="type-grid">
+                <article>
+                    <p class="font-label">OpenSans light</p>
+                    <p class="alphabet">abcdefghijklmnopqrstuvwxyz<br>123456789<br>!@#$%^&amp;*()</p>
+                    <span>23px</span>
+                </article>
+                <article>
+                    <p class="font-label bold">OpenSans Bold</p>
+                    <p class="alphabet bold">abcdefghijklmnopqrstuvwxyz<br>123456789<br>!@#$%^&amp;*()</p>
+                    <span>34px</span>
+                </article>
+            </div>
+            <div class="swatches" aria-label="Color palette">
                 <figure>
-                    <img class="ramen-broth" src="Ramen-Broth-35.jpg" alt="Ramen broth being poured">
+                    <span class="black"></span>
+                    <figcaption>#000000</figcaption>
                 </figure>
-            </section>
-        </div>
+                <figure>
+                    <span class="white"></span>
+                    <figcaption>#FFFFFF</figcaption>
+                </figure>
+                <figure>
+                    <span class="black"></span>
+                    <figcaption>#000000</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="sitemap section-pad">
+            <h2>Site Mapping</h2>
+            <div class="map-flow">
+                <article>Sign in</article>
+                <article>Menu</article>
+                <article>Track Order</article>
+                <article>Rewards</article>
+                <article>Location</article>
+            </div>
+        </section>
+
+        <section class="wireframes section-pad">
+            <h2>Wireframe</h2>
+            <div class="wire-grid">
+                <article class="phone login">
+                    <div class="logo">Logo</div>
+                    <label>UserName <span></span></label>
+                    <label>Password <span></span></label>
+                    <p>forgot your password click where to reset password</p>
+                </article>
+
+                <article class="phone menu">
+                    <div class="mini-top">
+                        <strong>Hello</strong>
+                        <span></span>
+                    </div>
+                    <h3>Daily Special</h3>
+                    <div class="card-row"><span></span><span></span></div>
+                    <h3>Ramen</h3>
+                    <div class="wide-card"></div>
+                    <h3>Popular</h3>
+                    <div class="card-row"><span></span><span></span></div>
+                </article>
+
+                <article class="phone detail">
+                    <div class="detail-image"></div>
+                    <h3>Shio Ramen</h3>
+                    <p>Allergens <b>&rsaquo;</b></p>
+                    <p>Customize <b>&rsaquo;</b></p>
+                    <button type="button">ADD TO CART</button>
+                </article>
+
+                <article class="phone payment">
+                    <h3>Shio Ramen x 1</h3>
+                    <p class="qty">1<br>2</p>
+                    <p class="totals">Subtotal $19.50<br>Tax $1.53<br>Total $21.00</p>
+                    <button type="button">Confirm Payment</button>
+                </article>
+            </div>
+        </section>
     </main>
-    <footer class="footer-links">
+
+    <footer>
         <a href="../../index.html">Home</a>
         <a href="../work.html">Work</a>
         <a href="../../about/about.html.HTML">About</a>
         <a href="../../contct/contact.html">Contact</a>
-        <a href="../../tutorials/tutorials.html">Tutorials</a>
-        <a href="https://github.com/Andywoo01">GitHub</a>
-        <a href="https://www.instagram.com/andyuiuxdesign/">Instagram</a>
-        <a href="https://www.linkedin.com/in/andyuserexperience/">LinkedIn</a>
-        <a href="https://www.pinterest.com/Andyuiuxdesign/">Pinterest</a>
-        <p>andyuiuxdesign &copy;2018-2026 All Rights Reserved</p>
+        <p>andyuiuxdesign&copy;2018-2026 All Rights Reserved</p>
     </footer>
 </body>
 </html>
