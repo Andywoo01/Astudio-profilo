@@ -56,9 +56,32 @@
             font-family: Consolas, monospace;
         }
 
-        .back-link {
-            display: inline-block;
-            margin-top: 8px;
+        .contactfoam {
+            margin: 36px auto;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .tutorial-back-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 990px;
+            min-height: 84px;
+            margin: 20px 0;
+            background: #000;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .tutorial-back-link:hover,
+        .tutorial-back-link:focus-visible {
+            background: #222;
         }
 
         @media (max-width: 767px) {
@@ -87,7 +110,6 @@
 
     <main>
         <section class="tutorial-intro">
-            <p>GitHub Pages</p>
             <h2>Set Up a Custom Domain</h2>
             <p>Connect a domain you own to your GitHub Pages website. You will update your domain's DNS records, add the domain in GitHub, then enable HTTPS.</p>
         </section>
@@ -120,7 +142,34 @@
             </article>
         </section>
 
-        <a class="back-link" href="tutorials.html">Back to tutorials</a>
+        <section class="contactfoam" aria-labelledby="contact-heading">
+            <h3 id="contact-heading">Feel free to contact me</h3>
+            <p>I will respond to you no later than two days.</p>
+            <form action="https://formspree.io/f/mwprbjgp" method="POST">
+                <label>
+                    Firstname:
+                    <input type="text" name="firstname">
+                </label>
+                <label>
+                    Lastname:
+                    <input type="text" name="lastname">
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Message:
+                    <textarea name="message"></textarea>
+                </label>
+                <div class="form-buttons">
+                    <button type="submit">Send</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <a class="tutorial-back-link" href="tutorials.html" aria-label="Back to tutorials" title="Back to tutorials">Back</a>
     </main>
 
     <footer class="footer-links">
