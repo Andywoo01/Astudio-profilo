@@ -43,8 +43,8 @@ function watchFiles() {
     watch(['images/**/*'], browserSync.reload);
     watch(['contact/**/*'], browserSync.reload);
     watch(['about/**/*'], browserSync.reload);
+    watch(['tutorials/**/*'], browserSync.reload);
     watch(['*.html'], browserSync.reload);
-     
     
 }
 
