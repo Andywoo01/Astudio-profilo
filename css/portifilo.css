@@ -454,12 +454,13 @@ img {
 }
 
 .contactfoam button[type="submit"] {
-    background-color: #333;
+    background-color: #111;
     color: white;
+    border: 1px solid #111;
 }
 
 .contactfoam button[type="submit"]:hover {
-    background-color: #555;
+    background-color: #3f3f3f;
 }
 
 .contactfoam button[type="reset"] {
@@ -470,6 +471,20 @@ img {
 
 .contactfoam button[type="reset"]:hover {
     background-color: #e0e0e0;
+}
+
+.back-button-container {
+    margin: 24px 0;
+    text-align: center;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #000;
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
 }
 
 footer {
