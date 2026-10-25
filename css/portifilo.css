@@ -476,7 +476,6 @@ footer {
     text-align: center;
     font-size: 12px;
     padding: 30px 20px;
-    border-top: 1px solid #eee;
     margin-top: 0;
 }
 
@@ -486,7 +485,6 @@ footer {
     justify-content: center;
     gap: 15px;
     padding: 30px 20px;
-    border-top: 1px solid #eee;
 }
 
 .footer-links a {
