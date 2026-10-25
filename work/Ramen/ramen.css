@@ -47,6 +47,10 @@ footer a {
     font-size: 24px;
 }
 
+.menu-close {
+    display: none;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -535,7 +539,7 @@ footer p {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
     .site-header {
         align-items: center;
         padding: 16px 18px;
@@ -564,6 +568,21 @@ footer p {
 
     #nav-menu.active {
         display: flex;
+    }
+
+    .menu-close {
+        display: block;
+        align-self: center;
+        width: 44px;
+        min-height: 44px;
+        margin-top: 8px;
+        border: 0;
+        background: transparent;
+        color: #111111;
+        font: inherit;
+        font-size: 32px;
+        line-height: 1;
+        cursor: pointer;
     }
 
     nav a {

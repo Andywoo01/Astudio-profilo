@@ -182,7 +182,7 @@ footer.footer-links p {
     margin: 0 0 0 auto;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
     .menu-toggle {
         display: inline-flex;
     }
@@ -210,6 +210,21 @@ footer.footer-links p {
         opacity: 1;
         transform: translateY(0);
         pointer-events: auto;
+    }
+
+    .menu-close {
+        display: block;
+        align-self: center;
+        width: 44px;
+        height: 44px;
+        margin-top: 8px;
+        border: 0;
+        background: transparent;
+        color: #333;
+        font: inherit;
+        font-size: 32px;
+        line-height: 1;
+        cursor: pointer;
     }
 
     .container {
