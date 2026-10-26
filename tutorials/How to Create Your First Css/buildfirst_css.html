@@ -92,21 +92,21 @@ p {
         </article>
       </section>
 
-      <section class="contactfoam" aria-labelledby="contact-heading">
+      <section class="contact-form-section" aria-labelledby="contact-heading">
         <h2 id="contact-heading">Feel free to contact me</h2>
         <p>I will respond to you no later than two days.</p>
-        <form action="https://formspree.io/f/mwprbjgp" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/mwprbjgp" method="POST">
           <label for="firstname">Firstname:</label>
-          <input id="firstname" type="text" name="firstname">
+          <input id="firstname" type="text" name="firstname" autocomplete="given-name" required>
 
           <label for="lastname">Lastname:</label>
-          <input id="lastname" type="text" name="lastname">
+          <input id="lastname" type="text" name="lastname" autocomplete="family-name" required>
 
           <label for="email">Email:</label>
-          <input id="email" type="email" name="email">
+          <input id="email" type="email" name="email" autocomplete="email" required>
 
           <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
           <div class="form-buttons">
             <button type="submit">Send</button>

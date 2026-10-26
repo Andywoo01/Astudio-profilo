@@ -177,32 +177,28 @@
         </article>
       </section>
 
-      <div class="contactfoam">
-        <h3>Feel free to contact me</h3>
+      <section class="contact-form-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Feel free to contact me</h2>
         <p>I will respond to you no later than two days.</p>
-        <form action="https://formspree.io/f/mwprbjgp" method="POST">
-          <label>
-            Firstname:
-            <input type="text" name="firstname">
-          </label>
-          <label>
-            Lastname:
-            <input type="text" name="lastname">
-          </label>
-          <label>
-            Email:
-            <input type="email" name="email">
-          </label>
-          <label>
-            Message:
-            <textarea name="message"></textarea>
-          </label>
+        <form class="contact-form" action="https://formspree.io/f/mwprbjgp" method="POST">
+          <label for="firstname">Firstname:</label>
+          <input id="firstname" type="text" name="firstname" autocomplete="given-name" required>
+
+          <label for="lastname">Lastname:</label>
+          <input id="lastname" type="text" name="lastname" autocomplete="family-name" required>
+
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email" autocomplete="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
           <div class="form-buttons">
             <button type="submit">Send</button>
             <button type="reset">Reset</button>
           </div>
         </form>
-      </div>
+      </section>
 
       <a class="back" href="../tutorials.html" aria-label="Back to tutorials" title="Back to tutorials">Back</a>
     </main>
