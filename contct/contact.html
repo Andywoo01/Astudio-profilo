@@ -29,38 +29,32 @@
             <button class="menu-close" type="button" aria-label="Close navigation">×</button>
         </nav>
     </header>
-    <div class="contactfoam">
-        <br>
-    <h3>Feel free to contact me</h3>
-    <p>I will respond to you no later than two days.</p>
-    </br>
-    <br>
-    </div>
-<form
-  action="https://formspree.io/f/mwprbjgp"
-  method="POST"
->
-<label>
-    Firstname:
-    <input type="text" name="firstname">
-</label>
-<label>
-    Lastname:
-    <input type="text" name="lastname">
-</label>
-<label>
-    Email:
-    <input type="email" name="email">
-</label>
-<label>
-    Message:
-    <textarea name="message"></textarea>
-</label>
-  <div class="form-buttons">
-    <button type="submit">Send</button>
-    <button type="reset">Reset</button>
-  </div>
-</form>
+    <section class="contact-form-section">
+        <h2>Feel free to contact me</h2>
+        <p>I will respond to you no later than two days.</p>
+        <form class="contact-form" action="https://formspree.io/f/mwprbjgp" method="POST">
+            <label>
+                Firstname:
+                <input type="text" name="firstname">
+            </label>
+            <label>
+                Lastname:
+                <input type="text" name="lastname">
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Message:
+                <textarea name="message"></textarea>
+            </label>
+            <div class="form-buttons">
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
     <footer>
         <div class="footer-links">
             <a href="../index.html">Home</a>   
