@@ -30,7 +30,8 @@
         </nav>
     </header>
     <main>
-        <section class="section">
+        <section class="section" aria-labelledby="recent-work-heading">
+            <h2 id="recent-work-heading" class="section-heading">Most Recent Work</h2>
             <div class="work-grid recent-work-grid">
                 <article class="work-item">
                     <a href="Ramen/ramen.html?v=20260520">
@@ -47,6 +48,32 @@
             </div>
         </section>    
     </main>
+    <section class="contact-form-section">
+        <h2>Feel free to contact me</h2>
+        <p>I will respond to you no later than two days.</p>
+        <form class="contact-form" action="https://formspree.io/f/mwprbjgp" method="POST">
+            <label>
+                Firstname:
+                <input type="text" name="firstname">
+            </label>
+            <label>
+                Lastname:
+                <input type="text" name="lastname">
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Message:
+                <textarea name="message"></textarea>
+            </label>
+            <div class="form-buttons">
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
     <footer>
         <div class="footer-links">
             <a href="../index.html">Home</a>
