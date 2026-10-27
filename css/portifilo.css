@@ -310,6 +310,16 @@ img {
     height: 100%;
 }
 
+.recent-work-grid.tutorials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    max-width: 408px;
+}
+
+.tutorials-grid .work-item {
+    height: auto;
+}
+
 .work-item {
     padding: 18px;
     border: 1px solid #eee;
