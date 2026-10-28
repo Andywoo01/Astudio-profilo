@@ -310,6 +310,7 @@ img {
     height: 100%;
 }
 
+.recent-work-grid.recent-work-scroll,
 .recent-work-grid.tutorials-grid {
     grid-template-columns: none;
     grid-auto-flow: column;
@@ -323,6 +324,7 @@ img {
     padding-bottom: 12px;
 }
 
+.recent-work-scroll .work-item,
 .tutorials-grid .work-item {
     height: auto;
     scroll-snap-align: start;
