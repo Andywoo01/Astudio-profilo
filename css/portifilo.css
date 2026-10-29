@@ -318,10 +318,17 @@ img {
     grid-auto-rows: minmax(250px, auto);
     max-width: 760px;
     overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     justify-content: start;
     padding-bottom: 12px;
+}
+
+.recent-work-grid.recent-work-scroll::-webkit-scrollbar,
+.recent-work-grid.tutorials-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .recent-work-scroll .work-item,
