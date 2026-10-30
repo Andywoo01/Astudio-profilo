@@ -326,6 +326,42 @@ img {
     padding-bottom: 12px;
 }
 
+.tutorials-carousel-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    max-width: 760px;
+    margin: 0 auto 10px;
+}
+
+.tutorials-scroll-button {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background: #fff;
+    color: #333;
+    font: inherit;
+    cursor: pointer;
+}
+
+.tutorials-scroll-button:hover:not(:disabled) {
+    background: #f2f2f2;
+}
+
+.tutorials-scroll-button:focus-visible {
+    outline: 3px solid #333;
+    outline-offset: 2px;
+}
+
+.tutorials-scroll-button:disabled {
+    color: #999;
+    cursor: default;
+}
+
 .recent-work-grid.recent-work-scroll::-webkit-scrollbar,
 .recent-work-grid.tutorials-grid::-webkit-scrollbar {
     display: none;

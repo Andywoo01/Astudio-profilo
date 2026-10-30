@@ -52,3 +52,38 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const tutorialGrid = document.querySelector('.tutorials-grid');
+    const scrollButtons = document.querySelectorAll('.tutorials-scroll-button');
+    const tutorialCard = tutorialGrid && tutorialGrid.querySelector('.work-item');
+
+    if (!tutorialGrid || !tutorialCard || scrollButtons.length !== 2) {
+        return;
+    }
+
+    const [scrollLeftButton, scrollRightButton] = scrollButtons;
+    const updateScrollButtons = function() {
+        scrollLeftButton.disabled = tutorialGrid.scrollLeft <= 0;
+        scrollRightButton.disabled =
+            tutorialGrid.scrollLeft + tutorialGrid.clientWidth >= tutorialGrid.scrollWidth - 1;
+    };
+
+    const scrollByCard = function(direction) {
+        const gap = parseFloat(window.getComputedStyle(tutorialGrid).columnGap) || 0;
+        tutorialGrid.scrollBy({
+            left: direction * (tutorialCard.getBoundingClientRect().width + gap),
+            behavior: 'smooth'
+        });
+    };
+
+    scrollLeftButton.addEventListener('click', function() {
+        scrollByCard(-1);
+    });
+    scrollRightButton.addEventListener('click', function() {
+        scrollByCard(1);
+    });
+    tutorialGrid.addEventListener('scroll', updateScrollButtons);
+    window.addEventListener('resize', updateScrollButtons);
+    updateScrollButtons();
+});
