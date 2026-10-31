@@ -54,36 +54,39 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const tutorialGrid = document.querySelector('.tutorials-grid');
-    const scrollButtons = document.querySelectorAll('.tutorials-scroll-button');
-    const tutorialCard = tutorialGrid && tutorialGrid.querySelector('.work-item');
+    document.querySelectorAll('.carousel-controls').forEach(function(controls) {
+        const scrollButtons = controls.querySelectorAll('.carousel-scroll-button');
+        const gridId = scrollButtons[0] && scrollButtons[0].getAttribute('aria-controls');
+        const grid = gridId && document.getElementById(gridId);
+        const card = grid && grid.querySelector('.work-item');
 
-    if (!tutorialGrid || !tutorialCard || scrollButtons.length !== 2) {
-        return;
-    }
+        if (!grid || !card || scrollButtons.length !== 2) {
+            return;
+        }
 
-    const [scrollLeftButton, scrollRightButton] = scrollButtons;
-    const updateScrollButtons = function() {
-        scrollLeftButton.disabled = tutorialGrid.scrollLeft <= 0;
-        scrollRightButton.disabled =
-            tutorialGrid.scrollLeft + tutorialGrid.clientWidth >= tutorialGrid.scrollWidth - 1;
-    };
+        const [scrollLeftButton, scrollRightButton] = scrollButtons;
+        const updateScrollButtons = function() {
+            scrollLeftButton.disabled = grid.scrollLeft <= 0;
+            scrollRightButton.disabled =
+                grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 1;
+        };
 
-    const scrollByCard = function(direction) {
-        const gap = parseFloat(window.getComputedStyle(tutorialGrid).columnGap) || 0;
-        tutorialGrid.scrollBy({
-            left: direction * (tutorialCard.getBoundingClientRect().width + gap),
-            behavior: 'smooth'
+        const scrollByCard = function(direction) {
+            const gap = parseFloat(window.getComputedStyle(grid).columnGap) || 0;
+            grid.scrollBy({
+                left: direction * (card.getBoundingClientRect().width + gap),
+                behavior: 'smooth'
+            });
+        };
+
+        scrollLeftButton.addEventListener('click', function() {
+            scrollByCard(-1);
         });
-    };
-
-    scrollLeftButton.addEventListener('click', function() {
-        scrollByCard(-1);
+        scrollRightButton.addEventListener('click', function() {
+            scrollByCard(1);
+        });
+        grid.addEventListener('scroll', updateScrollButtons);
+        window.addEventListener('resize', updateScrollButtons);
+        updateScrollButtons();
     });
-    scrollRightButton.addEventListener('click', function() {
-        scrollByCard(1);
-    });
-    tutorialGrid.addEventListener('scroll', updateScrollButtons);
-    window.addEventListener('resize', updateScrollButtons);
-    updateScrollButtons();
 });

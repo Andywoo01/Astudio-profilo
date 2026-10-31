@@ -326,7 +326,11 @@ img {
     padding-bottom: 12px;
 }
 
-.tutorials-carousel-controls {
+.recent-work-grid.recent-work-carousel {
+    max-width: 280px;
+}
+
+.carousel-controls {
     display: flex;
     justify-content: flex-end;
     gap: 8px;
@@ -334,7 +338,7 @@ img {
     margin: 0 auto 10px;
 }
 
-.tutorials-scroll-button {
+.carousel-scroll-button {
     display: grid;
     width: 34px;
     height: 34px;
@@ -348,16 +352,16 @@ img {
     cursor: pointer;
 }
 
-.tutorials-scroll-button:hover:not(:disabled) {
+.carousel-scroll-button:hover:not(:disabled) {
     background: #f2f2f2;
 }
 
-.tutorials-scroll-button:focus-visible {
+.carousel-scroll-button:focus-visible {
     outline: 3px solid #333;
     outline-offset: 2px;
 }
 
-.tutorials-scroll-button:disabled {
+.carousel-scroll-button:disabled {
     color: #999;
     cursor: default;
 }
