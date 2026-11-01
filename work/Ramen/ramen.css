@@ -132,6 +132,65 @@ footer a {
     justify-content: center;
 }
 
+.recent-work-grid.recent-work-scroll {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(220px, 260px);
+    grid-auto-rows: minmax(250px, auto);
+    max-width: 280px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    justify-content: start;
+}
+
+.recent-work-grid.recent-work-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.recent-work-scroll .work-item {
+    height: auto;
+    scroll-snap-align: start;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    max-width: 280px;
+    margin: 0 auto 10px;
+}
+
+.carousel-scroll-button {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    padding: 0;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #333333;
+    font: inherit;
+    cursor: pointer;
+}
+
+.carousel-scroll-button:hover:not(:disabled) {
+    background: #f2f2f2;
+}
+
+.carousel-scroll-button:focus-visible {
+    outline: 3px solid #333333;
+    outline-offset: 2px;
+}
+
+.carousel-scroll-button:disabled {
+    color: #999999;
+    cursor: default;
+}
+
 .work-item {
     width: 100%;
     height: 100%;

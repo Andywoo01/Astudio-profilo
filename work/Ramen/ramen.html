@@ -155,7 +155,11 @@
         <h2>Final Design</h2>
         <section class="recent-work section-pad" aria-labelledby="recent-work-heading">
             <h2 id="recent-work-heading">Most Recent Work</h2>
-            <div class="work-grid recent-work-grid">
+            <div class="carousel-controls" aria-label="Most recent work navigation">
+                <button class="carousel-scroll-button" type="button" aria-label="Scroll recent work left" aria-controls="ramen-recent-work-list">←</button>
+                <button class="carousel-scroll-button" type="button" aria-label="Scroll recent work right" aria-controls="ramen-recent-work-list">→</button>
+            </div>
+            <div id="ramen-recent-work-list" class="work-grid recent-work-grid recent-work-scroll" role="region" aria-label="Most recent work projects" tabindex="0">
                 <article class="work-item">
                     <a href="ramen.html?v=20260520">
                         <h3>Ramen</h3>
