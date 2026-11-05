@@ -102,7 +102,11 @@
 
       <section class="section" aria-labelledby="tutorial-links-heading">
         <h2 id="tutorial-links-heading" class="section-heading">Tutorials</h2>
-        <div class="work-grid">
+        <div class="carousel-controls" aria-label="Tutorial navigation">
+          <button class="carousel-scroll-button" type="button" aria-label="Scroll tutorials left" aria-controls="html-tutorials-list">←</button>
+          <button class="carousel-scroll-button" type="button" aria-label="Scroll tutorials right" aria-controls="html-tutorials-list">→</button>
+        </div>
+        <div id="html-tutorials-list" class="work-grid recent-work-grid tutorials-grid" role="region" aria-label="Tutorials" tabindex="0">
           <article class="work-item">
             <a href="../How%20to%20Create%20Your%20First%20Html/Firsthtml.html">
               <h3>How to Create Your First HTML</h3>
