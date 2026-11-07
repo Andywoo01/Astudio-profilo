@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="css-tutorial-page">
 <head>
     <script src="../../javascript/google-analytics.js" defer></script>
     <meta charset="UTF-8">
@@ -117,7 +117,11 @@ p {
 
       <section class="section" aria-labelledby="tutorial-links-heading">
         <h2 id="tutorial-links-heading" class="section-heading">Tutorials</h2>
-        <div class="work-grid">
+        <div class="carousel-controls" aria-label="Tutorial navigation">
+          <button class="carousel-scroll-button" type="button" aria-label="Scroll tutorials left" aria-controls="tutorial-links-list">←</button>
+          <button class="carousel-scroll-button" type="button" aria-label="Scroll tutorials right" aria-controls="tutorial-links-list">→</button>
+        </div>
+        <div id="tutorial-links-list" class="work-grid recent-work-grid recent-work-scroll" role="region" aria-label="Tutorial links" tabindex="0">
           <article class="work-item">
             <a href="../How%20to%20Create%20Your%20First%20Html/Firsthtml.html">
               <h3>How to Create Your First HTML</h3>
