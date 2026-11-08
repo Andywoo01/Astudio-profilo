@@ -135,9 +135,9 @@ nav a:hover {
     background: #fff;
 }
 
-.step h2 {
+html.css-tutorial-page .step h2 {
     margin: 0;
-    color: var(--accent);
+    color: #000;
     font-size: 1.05rem;
 }
 
@@ -147,6 +147,10 @@ nav a:hover {
 
 .step a {
     color: var(--accent);
+}
+
+#tutorial-links-list a {
+    color: #000;
 }
 
 .step code {
