@@ -1,6 +1,8 @@
 ---
 
 ##
+Astudio Design System:
+
 overview:
 build a portfilo that include everything  use i have  outline in the doucment.with throughtful layout .
 
@@ -25,6 +27,13 @@ Color Pallete
 | Light | 300 |
 | Bold | 700 |
 
+## Typography Specifications
+
+| Element | Weight | Font Size |
+|---------|--------|-----------|
+| Specimen headings (“OpenSans Bold”) | Bold | 90px |
+| Upper character sample | Light | 23px |
+| Lower character sample | Bold | 24px |
 
 
 
