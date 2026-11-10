@@ -54,7 +54,9 @@ intergram:
 
 ## do list 
 1.Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
+
 2.Social media links Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
+
 ##dont'do list
 
 
