@@ -50,14 +50,18 @@ pintrest:
 github:
 intergram:
 
-
-
 ## do list 
 1.Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
 
 2.Social media links Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
 
-##dont'do list
+3.Tyopgraphy rules for the link tags can you use open sans Typeography. 
+
+4.Responsive design Ensure the entire website adapts smoothly to different screen sizes, including desktops, tablets, and mobile devices. Keep content readable, layouts usable, and navigation accessible at every size.
+
+
+
+## dont'do list
 
 
 ##footer
