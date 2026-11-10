@@ -24,7 +24,7 @@ color palette.
 
 
 
-**Open Sans** is used throughout the highlighted typography samples.
+Open Sans** is used throughout the highlighted typography samples.
 
 | Weight | Numeric Value |
 |--------|---------------|
@@ -54,7 +54,8 @@ intergram:
 
 ## do list 
 1.Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
-
+2.Social media links Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
+3.
 ##dont'do list
 
 
