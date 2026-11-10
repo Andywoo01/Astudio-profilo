@@ -6,7 +6,7 @@ Astudio Design System:
 overview:
 build a portfilo that include everything  use i have  outline in the doucment.with throughtful layout .
 
-Color Pa
+color palette.      
 
 | Color | HEX | RGB |
 |-------|-----|-----|
@@ -20,12 +20,16 @@ Color Pa
 
 ## Font Family
 
+##Typography rules
+
+
+
 **Open Sans** is used throughout the highlighted typography samples.
 
 | Weight | Numeric Value |
 |--------|---------------|
-| Light | 300 |
-| Bold | 700 |
+| Light | 300 |.
+| Bold | 700 |.
 
 ## Typography Specifications
 
@@ -47,16 +51,14 @@ github:
 intergram:
 
 
-
-
 ## do list 
-1.when ever make the navagation bar menu  make sure  the navegation bar is respondsive.
-2.
+1.plase make sure the  entire website it respondsive  when.  
+2.can you make the layout simple and clean make the design is  has visual 
+ 
 
 
 ##dont'do list
 
 
 ##footer
-1.on the footer sectiction can you make it align to to the center.
-2.the  social media links can you  and the github can you linkk them.
+1. Center the footer content horizontally within the page. Keep the layout balanced and consistent with the rest of the design, and ensure it remains centered on both desktop and mobile screens.
