@@ -51,11 +51,9 @@ github:
 intergram:
 
 
-## do list 
-1.plase make sure the  entire website it respondsive  when.  
-2.can you make the layout simple and clean make the design is  has visual 
- 
 
+## do list 
+1.Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
 
 ##dont'do list
 
