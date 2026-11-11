@@ -55,6 +55,9 @@ pintrest :https://www.pinterest.com/Andyuiuxdesign/
 github   :https://github.com/Andywoo01/Astudio-profilo/
 intergram:
 
+## Seo 
+please include all the meta  tags  css, Javascript, user research, user experience, Wireframe, Rough sketch, SEO, , gulp, google, personal work, web design.
+
 ## Do list 
 1.Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
 
@@ -64,7 +67,8 @@ intergram:
 
 4.Responsive design Ensure the entire website adapts smoothly to different screen sizes, including desktops, tablets, and mobile devices. Keep content readable, layouts usable, and navigation accessible at every size.
 
-5. 
+5.In the HTML <head>, include the provided SEO meta tags a keywords tag with the listed topics and a description tag with the portfolio summary.
+
 
 ## Dont'do list
 
@@ -72,7 +76,7 @@ intergram:
 ##footer
 1. Center the footer content horizontally within the page. Keep the layout balanced and consistent with the rest of the design, and ensure it remains centered on both desktop and mobile screens.
 
-2. can you make the design 
+2. for the footer can you include all the links and to the social media can you also align the to center.
 
 
 
