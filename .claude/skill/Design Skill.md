@@ -53,10 +53,12 @@ about:
 contact:
 pintrest :https://www.pinterest.com/Andyuiuxdesign/
 github   :https://github.com/Andywoo01/Astudio-profilo/
-intergram:
+intergram:https://www.instagram.com/andyuiuxdesign01/
 
 ## Seo 
-please include all the meta  tags  css, Javascript, user research, user experience, Wireframe, Rough sketch, SEO, , gulp, google, personal work, web design.
+please include all the meta  tags  css, javascript, user research, user experience, wireframe, rough sketch, seo , gulp, google, personal work, web design.
+
+##contact foam
 
 ## Do list 
 1.Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
@@ -69,9 +71,9 @@ please include all the meta  tags  css, Javascript, user research, user experien
 
 5.In the HTML <head>, include the provided SEO meta tags a keywords tag with the listed topics and a description tag with the portfolio summary.
 
+6.
 
 ## Dont'do list
-
 
 ##footer
 1. Center the footer content horizontally within the page. Keep the layout balanced and consistent with the rest of the design, and ensure it remains centered on both desktop and mobile screens.
