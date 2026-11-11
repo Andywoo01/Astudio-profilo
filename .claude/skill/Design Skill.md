@@ -19,10 +19,16 @@ color palette.
 
 
 ## Font Family
-
+opens sans.
+Roberto.
 ##Typography rules
 
 
+##fontspaceing
+
+h1  tag can you use it  as  in a bold format.
+
+Roberto.
 
 Open Sans** is used throughout the highlighted typography samples.
 
@@ -39,18 +45,17 @@ Open Sans** is used throughout the highlighted typography samples.
 | Upper character sample | Light | 23px |
 | Lower character sample | Bold | 24px |
 
-
 ## Links
 links:
 home:
 work:
 about:
 contact:
-pintrest:
-github:
+pintrest :https://www.pinterest.com/Andyuiuxdesign/
+github   :https://github.com/Andywoo01/Astudio-profilo/
 intergram:
 
-## do list 
+## Do list 
 1.Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
 
 2.Social media links Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
@@ -59,10 +64,17 @@ intergram:
 
 4.Responsive design Ensure the entire website adapts smoothly to different screen sizes, including desktops, tablets, and mobile devices. Keep content readable, layouts usable, and navigation accessible at every size.
 
+5. 
 
-
-## dont'do list
+## Dont'do list
 
 
 ##footer
 1. Center the footer content horizontally within the page. Keep the layout balanced and consistent with the rest of the design, and ensure it remains centered on both desktop and mobile screens.
+
+2. can you make the design 
+
+
+
+##links
+for the social media links
