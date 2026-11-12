@@ -24,7 +24,7 @@ Roberto.
 ##Typography rules
 
 
-##fontspaceing
+##font spaceing
 
 h1  tag can you use it  as  in a bold format.
 
@@ -58,6 +58,10 @@ intergram:https://www.instagram.com/andyuiuxdesign01/
 ## Seo 
 please include all the meta  tags  css, javascript, user research, user experience, wireframe, rough sketch, seo , gulp, google, personal work, web design.
 
+
+##google analytics
+ <script src="javascript/google-analytics.js" defer></script>
+
 ##contact foam
 
 ## Do list 
@@ -71,7 +75,7 @@ please include all the meta  tags  css, javascript, user research, user experien
 
 5.In the HTML <head>, include the provided SEO meta tags a keywords tag with the listed topics and a description tag with the portfolio summary.
 
-6.
+6. please add google  this is the website.
 
 ## Dont'do list
 
