@@ -23,7 +23,7 @@ opens sans.
 Roberto.
 ##Typography rules
 
-
+h1 tag    
 ##font spaceing
 
 h1  tag can you use it  as  in a bold format.
@@ -51,7 +51,7 @@ home:
 work:
 about:
 contact:
-tut
+Tutorials:
 pintrest :https://www.pinterest.com/Andyuiuxdesign/
 github   :https://github.com/Andywoo01/Astudio-profilo/
 intergram:https://www.instagram.com/andyuiuxdesign01/
@@ -80,15 +80,17 @@ please include all the meta  tags  css, javascript, user research, user experien
 5. please add google analytics this is the website.
 
 6.on the about me section can you  all the text  i have in include.
+
+7. on the tutorials section can open up  the folder i have 
 ## Dont'do list
 
-##footer
+##Footer
 1. Center the footer content horizontally within the page. Keep the layout balanced and consistent with the rest of the design, and ensure it remains centered on both desktop and mobile screens.
 
 2. for the footer can you include all the links and to the social media can you also align the to center.
 
 
-##links
+##Links
 ##
 for the social media links.
 
@@ -101,13 +103,13 @@ about me section i am currently livening in California in the south bay area my 
 ##Tutorials
 how to host your website on github.
 
-01. - Choose a code editor.
+01. - <h1>Choose a code editor.<h1/>.
 Start by choosing a code editor. Visual Studio Code is a common option for PC and Mac users. Mac users can also explore Nova, BBEdit, or Xcode. Download Visual Studio Code.
 
-02. - Create a GitHub account.
+02. - <h1>Create a GitHub account.<h1/>.
 Create a GitHub account, then download GitHub Desktop so you can publish your website files. Download GitHub Desktop.
 
-03 - Set up your repository.
+03 - <h1>Set up your repository.<h1/>.
 Open GitHub Desktop after it is installed. This is where you will create the repository that holds your website files and connects them to GitHub.
 
 04 - Create a new repository.
