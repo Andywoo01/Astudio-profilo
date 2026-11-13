@@ -51,6 +51,7 @@ home:
 work:
 about:
 contact:
+tut
 pintrest :https://www.pinterest.com/Andyuiuxdesign/
 github   :https://github.com/Andywoo01/Astudio-profilo/
 intergram:https://www.instagram.com/andyuiuxdesign01/
@@ -87,7 +88,6 @@ please include all the meta  tags  css, javascript, user research, user experien
 2. for the footer can you include all the links and to the social media can you also align the to center.
 
 
-
 ##links
 ##
 for the social media links.
@@ -95,6 +95,22 @@ for the social media links.
 
 ##content
 
-##about
+##About
 about me section i am currently livening in California in the south bay area my first introduction in to the graphic design when i was in high school in my sophomore year in high school and in conjunction to fine arts after graduating high school i went on to study at local communitycollage DeAnza collage took a lot of art design photography course after obtaining certificate of design and photography i went through a lot of paid and unpaid workshops and trying to reinforce for i have learn in those workshop and apply it trough my personal work i don't hold a bachelors of fine art but i get a really good sense what good design is.
 
+##Tutorials
+how to host your website on github.
+
+01. - Choose a code editor.
+Start by choosing a code editor. Visual Studio Code is a common option for PC and Mac users. Mac users can also explore Nova, BBEdit, or Xcode. Download Visual Studio Code.
+
+02. - Create a GitHub account.
+Create a GitHub account, then download GitHub Desktop so you can publish your website files. Download GitHub Desktop.
+
+03 - Set up your repository.
+Open GitHub Desktop after it is installed. This is where you will create the repository that holds your website files and connects them to GitHub.
+
+04 - Create a new repository.
+Click File, then choose New repository. Before you continue, make a folder where you want to store your website code.
+
+05.
