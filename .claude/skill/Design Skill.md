@@ -55,28 +55,30 @@ pintrest :https://www.pinterest.com/Andyuiuxdesign/
 github   :https://github.com/Andywoo01/Astudio-profilo/
 intergram:https://www.instagram.com/andyuiuxdesign01/
 
-## Seo 
+## metatags
 please include all the meta  tags  css, javascript, user research, user experience, wireframe, rough sketch, seo , gulp, google, personal work, web design.
+
+
+##contact foam
 
 
 ##google analytics
  <script src="javascript/google-analytics.js" defer></script>
 
-##contact foam
 
 ## Do list 
 1.Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
 
-2.Social media links Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
 
-3.Tyopgraphy rules for the link tags can you use open sans Typeography. 
+2.Tyopgraphy rules for the link tags can you use open sans Typeography. 
 
-4.Responsive design Ensure the entire website adapts smoothly to different screen sizes, including desktops, tablets, and mobile devices. Keep content readable, layouts usable, and navigation accessible at every size.
+3.Responsive design Ensure the entire website adapts smoothly to different screen sizes, including desktops, tablets, and mobile devices. Keep content readable, layouts usable, and navigation accessible at every size.
 
-5.In the HTML <head>, include the provided SEO meta tags a keywords tag with the listed topics and a description tag with the portfolio summary.
+4.In the HTML <head>, include the provided SEO meta tags a keywords tag with the listed topics and a description tag with the portfolio summary.
 
-6. please add google  this is the website.
+5. please add google analytics this is the website.
 
+6.on the about me section can you  all the text  i have in include.
 ## Dont'do list
 
 ##footer
@@ -87,4 +89,12 @@ please include all the meta  tags  css, javascript, user research, user experien
 
 
 ##links
-for the social media links
+##
+for the social media links.
+
+
+##content
+
+##about
+about me section i am currently livening in California in the south bay area my first introduction in to the graphic design when i was in high school in my sophomore year in high school and in conjunction to fine arts after graduating high school i went on to study at local communitycollage DeAnza collage took a lot of art design photography course after obtaining certificate of design and photography i went through a lot of paid and unpaid workshops and trying to reinforce for i have learn in those workshop and apply it trough my personal work i don't hold a bachelors of fine art but i get a really good sense what good design is.
+
