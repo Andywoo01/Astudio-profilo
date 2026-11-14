@@ -22,12 +22,10 @@ color palette.
 opens sans.
 Roberto.
 ##Typography rules
+Use sans-serif fonts for all text.
+for the <h1> tag can you the roberto font.
 
-h1 tag.
-##font spaceing
-
-h1  tag can you use it  as  in a bold format.
-
+##letterspaceing
 Roberto.
 
 Open Sans** is used throughout the highlighted typography samples.
@@ -82,6 +80,8 @@ please include all the meta  tags  css, javascript, user research, user experien
 
 7.“In the GitHub hosting tutorials section, there is an images folder, and the images are numbered. Please follow those numbers in the list on the GitHub hosting tutorials section."
 
+8.
+
 ##Footer
 1. Center the footer content horizontally within the page. Keep the layout balanced and consistent with the rest of the design, and ensure it remains centered on both desktop and mobile screens.
 
@@ -110,8 +110,10 @@ Create a GitHub account, then download GitHub Desktop so you can publish your we
 03 - <h1>Set up your repository.<h1/>.
 Open GitHub Desktop after it is installed. This is where you will create the repository that holds your website files and connects them to GitHub.
 
-04 -<h1> Create a new repository.<h1/>
+04 -<h1> Create a new repository.<h1/>.
 Click File, then choose New repository. Before you continue, make a folder where you want to store your website code.
 
-05. - Continue with CSS.
+05. -<h1> Continue with CSS.</h1>.
 Your page now has content. Use the first CSS tutorial to add colors, spacing, and other visual styles. When you are ready to share your site online, follow the GitHub Pages hosting tutorial.
+
+
