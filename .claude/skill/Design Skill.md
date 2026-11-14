@@ -24,7 +24,12 @@ Roberto.
 ##Typography rules
 Use sans-serif fonts for all text.
 for the <h1> tag can you the roberto font.
-and the <p> tag can y
+and the <p> .
+Use a 12px font size for all text, including headings.
+## header 1
+
+
+
 
 ##letterspaceing
 Roberto.
@@ -44,6 +49,12 @@ Open Sans** is used throughout the highlighted typography samples.
 | Upper character sample | Light | 23px |
 | Lower character sample | Bold | 24px |
 
+##header h1
+Choose a code editor.
+Create a GitHub account.
+Set up your repository.
+
+
 ## Links
 links:
 home:
@@ -61,6 +72,7 @@ please include all the meta  tags  css, javascript, user research, user experien
 
 ##contact foam
 
+for the contact foam.
 
 ##google analytics
 <script src="javascript/google-analytics.js" defer></script>.
@@ -102,16 +114,16 @@ about me section i am currently livening in California in the south bay area my 
 ##Tutorials
 how to host your website on github.
 
-01. - <h1>Choose a code editor.<h1/>.
+01. - Choose a code editor.
 Start by choosing a code editor. Visual Studio Code is a common option for PC and Mac users. Mac users can also explore Nova, BBEdit, or Xcode. Download Visual Studio Code.
 
-02. - <h1>Create a GitHub account.<h1/>.
+02. - Create a GitHub account.
 Create a GitHub account, then download GitHub Desktop so you can publish your website files. Download GitHub Desktop.
 
-03 - <h1>Set up your repository.<h1/>.
+03 - Set up your repository.
 Open GitHub Desktop after it is installed. This is where you will create the repository that holds your website files and connects them to GitHub.
 
-04 -<h1> Create a new repository.<h1/>.
+04 - Create a new repository.
 Click File, then choose New repository. Before you continue, make a folder where you want to store your website code.
 
 05. -<h1> Continue with CSS.</h1>.
