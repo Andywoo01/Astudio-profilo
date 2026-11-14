@@ -24,6 +24,7 @@ Roberto.
 ##Typography rules
 Use sans-serif fonts for all text.
 for the <h1> tag can you the roberto font.
+and the <p> tag can y
 
 ##letterspaceing
 Roberto.
@@ -62,7 +63,7 @@ please include all the meta  tags  css, javascript, user research, user experien
 
 
 ##google analytics
- <script src="javascript/google-analytics.js" defer></script>
+<script src="javascript/google-analytics.js" defer></script>.
 
 
 ## Do list 
