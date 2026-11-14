@@ -23,7 +23,7 @@ opens sans.
 Roberto.
 ##Typography rules
 
-h1 tag    
+h1 tag.
 ##font spaceing
 
 h1  tag can you use it  as  in a bold format.
@@ -70,19 +70,17 @@ please include all the meta  tags  css, javascript, user research, user experien
 ## Do list 
 1.Make sure each social media icon links to the correct profile page. Use the profile URLs provided in the project, and don’t guess or substitute links.
 
-
 2.Tyopgraphy rules for the link tags can you use open sans Typeography. 
 
 3.Responsive design Ensure the entire website adapts smoothly to different screen sizes, including desktops, tablets, and mobile devices. Keep content readable, layouts usable, and navigation accessible at every size.
 
 4.In the HTML <head>, include the provided SEO meta tags a keywords tag with the listed topics and a description tag with the portfolio summary.
 
-5. please add google analytics this is the website.
+5. please add google analytics to this website.
 
 6.on the about me section can you  all the text  i have in include.
 
-7. on the tutorials section can open up  the folder i have 
-## Dont'do list
+7.“In the GitHub hosting tutorials section, there is an images folder, and the images are numbered. Please follow those numbers in the list on the GitHub hosting tutorials section."
 
 ##Footer
 1. Center the footer content horizontally within the page. Keep the layout balanced and consistent with the rest of the design, and ensure it remains centered on both desktop and mobile screens.
@@ -112,7 +110,8 @@ Create a GitHub account, then download GitHub Desktop so you can publish your we
 03 - <h1>Set up your repository.<h1/>.
 Open GitHub Desktop after it is installed. This is where you will create the repository that holds your website files and connects them to GitHub.
 
-04 - Create a new repository.
+04 -<h1> Create a new repository.<h1/>
 Click File, then choose New repository. Before you continue, make a folder where you want to store your website code.
 
-05.
+05. - Continue with CSS.
+Your page now has content. Use the first CSS tutorial to add colors, spacing, and other visual styles. When you are ready to share your site online, follow the GitHub Pages hosting tutorial.
