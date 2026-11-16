@@ -77,7 +77,9 @@
     }
     .site-nav { display: flex; align-items: center; gap: clamp(16px, 2.3vw, 32px); }
     .site-nav a { font-size: 12px; font-weight: 600; text-decoration: none; }
-    .site-nav a:hover, .footer-links a:hover { text-decoration: underline; text-underline-offset: 5px; }
+    .site-nav a:hover { opacity: 0.65; }
+    .nav-social { display: flex; align-items: center; gap: 14px; }
+    .nav-social a { white-space: nowrap; }
     .menu-toggle {
       display: none;
       width: 44px;
@@ -189,7 +191,8 @@
     .site-footer { padding-block: 36px 26px; border-top: 1px solid var(--line); }
     .footer-inner { display: grid; justify-items: center; gap: 20px; text-align: center; }
     .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; }
-    .footer-links a { font-size: 11px; font-weight: 600; }
+    .footer-links a { font-size: 11px; font-weight: 600; text-decoration: none; }
+    .footer-links a:hover { opacity: 0.65; }
     .copyright { margin-bottom: 0; color: var(--muted); font-size: 10px; }
 
     @media (max-width: 760px) {
@@ -197,7 +200,9 @@
       .menu-toggle { display: inline-flex; }
       .site-nav { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; align-items: stretch; gap: 0; padding: 10px var(--gutter) 18px; border-bottom: 1px solid var(--line); background: var(--paper); }
       .site-nav.is-open { display: grid; }
-      .site-nav a { padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+      .site-nav a { padding: 12px 0; border-bottom: 0; font-size: 13px; }
+      .site-nav .nav-social { padding: 10px 0 0; }
+      .site-nav .nav-social a { padding: 0; font-size: 12px; }
       .hero { min-height: auto; grid-template-columns: 1fr 0.72fr; gap: 24px; padding-block: 68px 82px; }
       .hero-portrait { width: 100%; }
       .section-heading { align-items: start; flex-direction: column; }
@@ -237,6 +242,11 @@
       </button>
       <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
         <a href="#home">Home</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <div class="nav-social" aria-label="Social media">
+          <a href="https://github.com/Andywoo01/Astudio-profilo/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/andyuiuxdesign01/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.pinterest.com/Andyuiuxdesign/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+        </div>
       </nav>
     </div>
   </header>
