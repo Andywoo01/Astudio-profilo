@@ -201,8 +201,8 @@
       .site-nav { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; align-items: stretch; gap: 0; padding: 10px var(--gutter) 18px; border-bottom: 1px solid var(--line); background: var(--paper); }
       .site-nav.is-open { display: grid; }
       .site-nav a { padding: 12px 0; border-bottom: 0; font-size: 13px; }
-      .site-nav .nav-social { padding: 10px 0 0; }
-      .site-nav .nav-social a { padding: 0; font-size: 12px; }
+      .site-nav .nav-social { display: grid; grid-template-columns: max-content; gap: 10px; padding: 10px 0 0; }
+      .site-nav .nav-social a { display: inline-flex; padding: 0; font-size: 12px; white-space: nowrap; }
       .hero { min-height: auto; grid-template-columns: 1fr 0.72fr; gap: 24px; padding-block: 68px 82px; }
       .hero-portrait { width: 100%; }
       .section-heading { align-items: start; flex-direction: column; }
