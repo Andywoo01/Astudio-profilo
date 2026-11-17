@@ -78,7 +78,7 @@
     .site-nav { display: flex; align-items: center; gap: clamp(16px, 2.3vw, 32px); }
     .site-nav a { font-size: 12px; font-weight: 600; text-decoration: none; }
     .site-nav a:hover { opacity: 0.65; }
-    .nav-social { display: flex; align-items: center; gap: 14px; }
+    .nav-social { display: flex; align-items: center; gap: clamp(16px, 2.3vw, 32px); }
     .nav-social a { white-space: nowrap; }
     .menu-toggle {
       display: none;
@@ -112,7 +112,6 @@
     h1 { max-width: 720px; margin-bottom: 24px; font-size: clamp(54px, 8.3vw, 110px); font-weight: 500; line-height: 0.97; }
     h1 span { display: block; font-weight: 300; }
     .hero-copy > p:not(.eyebrow) { max-width: 470px; margin-bottom: 28px; color: var(--muted); font-size: clamp(15px, 1.4vw, 17px); }
-    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; }
     .button {
       display: inline-flex;
       min-height: 48px;
@@ -129,22 +128,9 @@
       transition: background 160ms ease, color 160ms ease;
     }
     .button:hover { background: var(--paper); color: var(--ink); }
-    .text-link { font-size: 12px; font-weight: 700; }
     .hero-portrait { position: relative; width: min(100%, 430px); justify-self: end; padding: 0 0 18px 18px; }
     .hero-portrait::before { position: absolute; z-index: -1; inset: 18px 18px 0 0; border: 1px solid var(--ink); content: ""; }
     .hero-portrait img { width: 100%; aspect-ratio: 0.84; object-fit: cover; object-position: center 35%; filter: grayscale(100%); }
-    .portrait-caption {
-      position: absolute;
-      right: -14px;
-      bottom: 42px;
-      padding: 9px 13px;
-      background: var(--paper);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      writing-mode: vertical-rl;
-    }
     .section { padding-block: clamp(72px, 10vw, 132px); border-top: 1px solid var(--line); }
     .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: clamp(32px, 5vw, 62px); }
     .section-kicker { margin-bottom: 12px; color: var(--muted); }
@@ -201,8 +187,8 @@
       .site-nav { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; align-items: stretch; gap: 0; padding: 10px var(--gutter) 18px; border-bottom: 1px solid var(--line); background: var(--paper); }
       .site-nav.is-open { display: grid; }
       .site-nav a { padding: 12px 0; border-bottom: 0; font-size: 13px; }
-      .site-nav .nav-social { display: grid; grid-template-columns: max-content; gap: 10px; padding: 10px 0 0; }
-      .site-nav .nav-social a { display: inline-flex; padding: 0; font-size: 12px; white-space: nowrap; }
+      .site-nav .nav-social { display: grid; grid-template-columns: max-content; gap: 0; padding: 0; }
+      .site-nav .nav-social a { display: inline-flex; white-space: nowrap; }
       .hero { min-height: auto; grid-template-columns: 1fr 0.72fr; gap: 24px; padding-block: 68px 82px; }
       .hero-portrait { width: 100%; }
       .section-heading { align-items: start; flex-direction: column; }
@@ -257,14 +243,9 @@
         <p class="eyebrow">UI/UX designer · South Bay, California</p>
         <h1 id="hero-title">Designing <span>with people</span> in mind.</h1>
         <p>I turn thoughtful research and clear ideas into digital experiences that feel simple, useful, and human.</p>
-        <div class="hero-actions">
-          <a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
-          <a class="text-link" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
-        </div>
       </div>
       <figure class="hero-portrait">
         <img src="images/Andy_01.png" alt="Portrait of Andy Woo" fetchpriority="high">
-        <figcaption class="portrait-caption">Independent designer</figcaption>
       </figure>
     </section>
 
