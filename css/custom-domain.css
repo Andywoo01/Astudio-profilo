@@ -56,8 +56,15 @@ header {
 }
 
 .brand {
-    font-weight: 700;
-    font-size: 1.05rem;
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 136px;
+    height: auto;
 }
 
 .menu-toggle {
