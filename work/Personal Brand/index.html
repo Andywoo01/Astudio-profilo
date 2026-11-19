@@ -54,7 +54,7 @@
         .brand-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: clamp(32px, 5vw, 62px); }
         .brand-section-title { max-width: 620px; margin: 0; font-family: Roboto, sans-serif; font-size: clamp(38px, 6vw, 68px); font-weight: 400; letter-spacing: -.055em; line-height: 1.03; }
         .brand-section-intro { max-width: 390px; margin: 0 0 4px; color: var(--muted); font-size: 14px; }
-        .brand-system-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(18px, 3vw, 36px); }
+        .brand-system-grid { display: grid; grid-template-columns: 1fr; gap: clamp(18px, 3vw, 36px); }
         .brand-element { min-height: 330px; border: 1px solid var(--line); background: var(--soft); }
         .brand-element-label { display: flex; min-height: 54px; align-items: center; margin: 0; padding: 0 18px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
         .brand-element-content { display: grid; min-height: 276px; padding: 30px; place-items: center; }
@@ -162,14 +162,6 @@
                 </div>
                 <div class="brand-system-grid">
                     <article class="brand-element">
-                        <p class="brand-element-label">Primary logo</p>
-                        <div class="brand-element-content"><img src="../../logo/Andy%20ui%20ux%20Logo.png" alt=""></div>
-                    </article>
-                    <article class="brand-element">
-                        <p class="brand-element-label">Monogram</p>
-                        <div class="brand-element-content"><div class="brand-monogram" aria-hidden="true">A</div></div>
-                    </article>
-                    <article class="brand-element">
                         <p class="brand-element-label">Color palette</p>
                         <div class="brand-element-content">
                             <div class="brand-palette" aria-label="Black and white brand palette">
@@ -178,70 +170,9 @@
                             </div>
                         </div>
                     </article>
-                    <article class="brand-element">
-                        <p class="brand-element-label">Typography</p>
-                        <div class="brand-element-content">
-                            <div class="brand-type-sample">
-                                <strong>Design with<br>people in mind.</strong>
-                                <span>Roboto · Open Sans · Clear hierarchy</span>
-                            </div>
-                        </div>
-                    </article>
                 </div>
-            </div>
-        </section>
-
-        <section class="brand-section" aria-labelledby="process-title">
-            <div class="brand-container">
-                <div class="brand-section-heading">
-                    <div>
-                        <p class="brand-kicker">How the identity works</p>
-                        <h2 class="brand-section-title" id="process-title">Built with purpose.</h2>
-                    </div>
-                    <p class="brand-section-intro">A focused process keeps the work recognizable, usable, and consistent from page to page.</p>
-                </div>
-                <div class="brand-process">
-                    <article class="brand-process-card"><span>01 / Understand</span><h3>Research</h3><p>Define the audience, goals, and the role the brand needs to play.</p></article>
-                    <article class="brand-process-card"><span>02 / Explore</span><h3>Direction</h3><p>Turn strategy into a clear visual language and repeatable system.</p></article>
-                    <article class="brand-process-card"><span>03 / Make</span><h3>Design</h3><p>Shape the logo, typography, spacing, and key interface elements.</p></article>
-                    <article class="brand-process-card"><span>04 / Refine</span><h3>Apply</h3><p>Use the system consistently across the portfolio and future work.</p></article>
-                </div>
-            </div>
-        </section>
-
-        <section class="brand-section brand-contact" id="contact" aria-labelledby="contact-heading">
-            <div class="brand-container brand-contact-grid">
-                <div class="brand-contact-copy">
-                    <p class="brand-kicker">Have a good one in mind?</p>
-                    <h2 class="brand-section-title" id="contact-heading">Let’s make something meaningful.</h2>
-                    <p>Have a project, a question, or just want to say hello? Send me a note—I’d be glad to hear from you.</p>
-                </div>
-                <form class="brand-contact-form" action="https://formspree.io/f/mwprbjgp" method="POST">
-                    <div class="brand-field"><label for="firstname">First name</label><input id="firstname" name="firstname" type="text" autocomplete="given-name" required></div>
-                    <div class="brand-field"><label for="lastname">Last name</label><input id="lastname" name="lastname" type="text" autocomplete="family-name" required></div>
-                    <div class="brand-field brand-field-wide"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-                    <div class="brand-field brand-field-wide"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
-                    <button class="brand-submit" type="submit">Send message <span aria-hidden="true">↗</span></button>
-                </form>
             </div>
         </section>
     </main>
-
-    <footer class="brand-footer">
-        <div class="brand-container brand-footer-inner">
-            <nav class="brand-footer-links" aria-label="Footer navigation">
-                <a href="../../index.html">Home</a>
-                <a href="../work.html">Work</a>
-                <a href="../../about/about.html.HTML">About</a>
-                <a href="#contact">Contact</a>
-                <a href="../../tutorials/tutorials.html">Tutorials</a>
-                <a href="https://github.com/Andywoo01/Astudio-profilo/" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://www.instagram.com/andyuiuxdesign01/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://www.linkedin.com/in/andyuserexperience/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://www.pinterest.com/Andyuiuxdesign/" target="_blank" rel="noopener noreferrer">Pinterest</a>
-            </nav>
-            <p>andyuiuxdesign©2018-2026 All Rights Reserved</p>
-        </div>
-    </footer>
 </body>
 </html>
