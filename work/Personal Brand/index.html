@@ -34,23 +34,22 @@
         .brand-page-header { position: sticky; z-index: 10; top: 0; min-height: 76px; border-bottom: 1px solid var(--line); background: rgb(255 255 255 / 94%); backdrop-filter: blur(12px); }
         .brand-header-inner { display: flex; width: min(100% - (var(--gutter) * 2), var(--content)); min-height: 76px; margin-inline: auto; align-items: center; justify-content: space-between; gap: 24px; }
         .brand-wordmark { display: inline-flex; flex: 0 0 auto; align-items: center; text-decoration: none; }
-        .brand-wordmark img { width: 136px; height: auto; }
+        .brand-wordmark img { width: 170px; height: auto; }
         #nav-menu { display: flex; flex: 1; align-items: center; justify-content: flex-end; gap: clamp(16px, 2.3vw, 32px); }
         #nav-menu a { font-size: 12px; font-weight: 600; text-decoration: none; }
         #nav-menu a:hover { opacity: .65; }
         .menu-toggle { display: none; }
         .menu-close { display: none; }
         .brand-container { width: min(100% - (var(--gutter) * 2), var(--content)); margin-inline: auto; }
-        .brand-hero { display: grid; min-height: min(620px, calc(100svh - 76px)); grid-template-columns: 1.05fr .95fr; align-items: center; gap: clamp(36px, 7vw, 104px); padding-block: clamp(64px, 9vw, 120px); background: var(--paper); }
+        .brand-hero { display: grid; min-height: min(620px, calc(100svh - 76px)); grid-template-columns: 1fr; place-items: center; padding-block: clamp(64px, 9vw, 120px); background: var(--paper); }
         .brand-eyebrow, .brand-kicker { margin: 0 0 22px; font-size: 11px; font-weight: 700; letter-spacing: .14em; line-height: 1.5; text-transform: uppercase; }
         .brand-eyebrow { display: flex; align-items: center; gap: 10px; }
         .brand-eyebrow::before { width: 24px; height: 1px; background: currentColor; content: ""; }
         .brand-hero h1 { max-width: 700px; margin: 0 0 24px; font-family: Roboto, sans-serif; font-size: clamp(54px, 8vw, 104px); font-weight: 500; letter-spacing: -.055em; line-height: .97; }
         .brand-hero h1 span { display: block; font-weight: 300; }
         .brand-hero-copy > p:not(.brand-eyebrow) { max-width: 470px; margin: 0 0 28px; color: var(--muted); font-size: clamp(15px, 1.4vw, 17px); }
-        .brand-logo-frame { position: relative; display: grid; min-height: 430px; overflow: hidden; place-items: center; border: 1px solid var(--line); background: var(--paper); }
-        .brand-logo-frame::before { position: absolute; z-index: 0; inset: 18px 18px 18px 18px; border: 1px solid var(--ink); content: ""; }
-        .brand-logo-frame img { position: relative; z-index: 1; width: min(82%, 520px); height: auto; }
+        .brand-logo-frame { display: grid; width: 100%; min-height: 430px; place-items: center; background: var(--paper); }
+        .brand-logo-frame img { width: min(82%, 520px); height: auto; }
         .brand-section { padding-block: clamp(72px, 9vw, 120px); border-top: 1px solid var(--line); }
         .brand-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: clamp(32px, 5vw, 62px); }
         .brand-section-title { max-width: 620px; margin: 0; font-family: Roboto, sans-serif; font-size: clamp(38px, 6vw, 68px); font-weight: 400; letter-spacing: -.055em; line-height: 1.03; }
@@ -101,7 +100,7 @@
             #nav-menu a { padding: 12px 0; text-align: center; }
             .brand-hero { min-height: auto; grid-template-columns: 1fr; gap: 38px; padding-block: 56px 66px; }
             .brand-hero h1 { font-size: clamp(52px, 16vw, 78px); }
-            .brand-logo-frame { min-height: 300px; }
+            .brand-logo-frame { min-height: 300px; grid-column: 1; }
             .brand-section-heading { align-items: start; flex-direction: column; }
             .brand-system-grid { grid-template-columns: 1fr; }
             .brand-process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -146,12 +145,7 @@
     </header>
 
     <main>
-        <section class="brand-container brand-hero" aria-labelledby="brand-heading">
-            <div class="brand-hero-copy">
-                <p class="brand-eyebrow">Identity · UI/UX · Frontend</p>
-                <h1 id="brand-heading">Personal <span>Brand.</span></h1>
-                <p>A clear, thoughtful identity for Andy Woo, built to bring together design, frontend development, and project storytelling.</p>
-            </div>
+        <section class="brand-container brand-hero">
             <div class="brand-logo-frame">
                 <img src="../../logo/Andy%20ui%20ux%20Logo.png" alt="Andy UI UX Design personal brand logo">
             </div>
