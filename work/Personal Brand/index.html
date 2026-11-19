@@ -10,90 +10,244 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andyuiuxdesign | Personal Brand</title>
     <link rel="stylesheet" type="text/css" href="../../css/portifilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="../../javascript/astudio.js" defer></script>
+    <style>
+        :root {
+            --ink: #000;
+            --paper: #fff;
+            --soft: #f5f5f3;
+            --line: #dededb;
+            --muted: #666;
+            --content: 1180px;
+            --gutter: clamp(20px, 5vw, 72px);
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-padding-top: 92px; }
+        body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Open Sans", sans-serif; font-size: 15px; line-height: 1.7; }
+        img { display: block; max-width: 100%; }
+        a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+        a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+        h1, h2, h3, p { margin-top: 0; }
+        .brand-page-header { position: sticky; z-index: 10; top: 0; min-height: 76px; border-bottom: 1px solid var(--line); background: rgb(255 255 255 / 94%); backdrop-filter: blur(12px); }
+        .brand-header-inner { display: flex; width: min(100% - (var(--gutter) * 2), var(--content)); min-height: 76px; margin-inline: auto; align-items: center; justify-content: space-between; gap: 24px; }
+        .brand-wordmark { display: inline-flex; flex: 0 0 auto; align-items: center; text-decoration: none; }
+        .brand-wordmark img { width: 136px; height: auto; }
+        #nav-menu { display: flex; flex: 1; align-items: center; justify-content: flex-end; gap: clamp(16px, 2.3vw, 32px); }
+        #nav-menu a { font-size: 12px; font-weight: 600; text-decoration: none; }
+        #nav-menu a:hover { opacity: .65; }
+        .menu-toggle { display: none; }
+        .menu-close { display: none; }
+        .brand-container { width: min(100% - (var(--gutter) * 2), var(--content)); margin-inline: auto; }
+        .brand-hero { display: grid; min-height: min(620px, calc(100svh - 76px)); grid-template-columns: 1.05fr .95fr; align-items: center; gap: clamp(36px, 7vw, 104px); padding-block: clamp(64px, 9vw, 120px); background: var(--paper); }
+        .brand-eyebrow, .brand-kicker { margin: 0 0 22px; font-size: 11px; font-weight: 700; letter-spacing: .14em; line-height: 1.5; text-transform: uppercase; }
+        .brand-eyebrow { display: flex; align-items: center; gap: 10px; }
+        .brand-eyebrow::before { width: 24px; height: 1px; background: currentColor; content: ""; }
+        .brand-hero h1 { max-width: 700px; margin: 0 0 24px; font-family: Roboto, sans-serif; font-size: clamp(54px, 8vw, 104px); font-weight: 500; letter-spacing: -.055em; line-height: .97; }
+        .brand-hero h1 span { display: block; font-weight: 300; }
+        .brand-hero-copy > p:not(.brand-eyebrow) { max-width: 470px; margin: 0 0 28px; color: var(--muted); font-size: clamp(15px, 1.4vw, 17px); }
+        .brand-logo-frame { position: relative; display: grid; min-height: 430px; overflow: hidden; place-items: center; border: 1px solid var(--line); background: var(--paper); }
+        .brand-logo-frame::before { position: absolute; z-index: 0; inset: 18px 18px 18px 18px; border: 1px solid var(--ink); content: ""; }
+        .brand-logo-frame img { position: relative; z-index: 1; width: min(82%, 520px); height: auto; }
+        .brand-section { padding-block: clamp(72px, 9vw, 120px); border-top: 1px solid var(--line); }
+        .brand-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: clamp(32px, 5vw, 62px); }
+        .brand-section-title { max-width: 620px; margin: 0; font-family: Roboto, sans-serif; font-size: clamp(38px, 6vw, 68px); font-weight: 400; letter-spacing: -.055em; line-height: 1.03; }
+        .brand-section-intro { max-width: 390px; margin: 0 0 4px; color: var(--muted); font-size: 14px; }
+        .brand-system-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(18px, 3vw, 36px); }
+        .brand-element { min-height: 330px; border: 1px solid var(--line); background: var(--soft); }
+        .brand-element-label { display: flex; min-height: 54px; align-items: center; margin: 0; padding: 0 18px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+        .brand-element-content { display: grid; min-height: 276px; padding: 30px; place-items: center; }
+        .brand-element-content img { width: min(86%, 430px); }
+        .brand-monogram { display: grid; width: 170px; height: 170px; place-items: center; border: 1px solid var(--ink); font-family: Roboto, sans-serif; font-size: 104px; font-weight: 700; line-height: 1; }
+        .brand-palette { display: grid; width: 100%; grid-template-columns: repeat(2, 1fr); align-self: stretch; }
+        .brand-swatch { display: flex; align-items: end; min-height: 220px; padding: 16px; border: 1px solid var(--line); background: var(--paper); }
+        .brand-swatch:first-child { background: var(--ink); color: var(--paper); }
+        .brand-swatch:last-child { background: var(--paper); color: var(--ink); }
+        .brand-swatch span { font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+        .brand-type-sample { align-self: stretch; width: 100%; }
+        .brand-type-sample strong { display: block; font-family: Roboto, sans-serif; font-size: clamp(34px, 5vw, 58px); font-weight: 500; letter-spacing: -.055em; line-height: 1; }
+        .brand-type-sample span { display: block; margin-top: 24px; color: var(--muted); font-size: 13px; }
+        .brand-process { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+        .brand-process-card { min-height: 210px; padding: 23px 20px 10px 0; }
+        .brand-process-card + .brand-process-card { padding-left: 20px; border-left: 1px solid var(--line); }
+        .brand-process-card span { display: block; margin-bottom: 30px; color: var(--muted); font-size: 11px; }
+        .brand-process-card h3 { margin: 0 0 9px; font-family: Roboto, sans-serif; font-size: 20px; font-weight: 500; }
+        .brand-process-card p { max-width: 250px; margin: 0; color: var(--muted); font-size: 13px; }
+        .brand-contact { background: var(--soft); }
+        .brand-contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(36px, 8vw, 110px); }
+        .brand-contact-copy .brand-section-title { max-width: 430px; margin-bottom: 18px; }
+        .brand-contact-copy > p:last-child { max-width: 360px; margin: 0; color: var(--muted); }
+        .brand-contact-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 16px; }
+        .brand-field { display: grid; gap: 7px; }
+        .brand-field-wide { grid-column: 1 / -1; }
+        .brand-field label { font-size: 11px; font-weight: 700; }
+        .brand-field input, .brand-field textarea { width: 100%; min-height: 46px; padding: 11px 12px; border: 1px solid #c9c9c5; border-radius: 0; background: var(--paper); color: var(--ink); font: inherit; font-size: 13px; }
+        .brand-field textarea { min-height: 128px; resize: vertical; }
+        .brand-submit { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 16px; justify-self: start; padding: 12px 18px; border: 1px solid var(--ink); border-radius: 0; background: var(--ink); color: var(--paper); font-size: 12px; font-weight: 700; cursor: pointer; }
+        .brand-submit:hover { background: var(--paper); color: var(--ink); }
+        .brand-footer { border-top: 1px solid var(--line); padding-block: 36px 26px; }
+        .brand-footer-inner { display: grid; justify-items: center; gap: 20px; text-align: center; }
+        .brand-footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; }
+        .brand-footer-links a { font-size: 11px; font-weight: 600; text-decoration: none; }
+        .brand-footer-links a:hover { opacity: .65; }
+        .brand-footer-inner p { margin: 0; color: var(--muted); font-size: 10px; }
+        @media (max-width: 760px) {
+            .brand-header-inner { min-height: 68px; }
+            .menu-toggle { display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
+            #nav-menu { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; gap: 0; padding: 10px var(--gutter) 18px; border-bottom: 1px solid var(--line); background: var(--paper); }
+            #nav-menu.active, #nav-menu.open { display: grid; }
+            #nav-menu a { padding: 12px 0; text-align: center; }
+            .brand-hero { min-height: auto; grid-template-columns: 1fr; gap: 38px; padding-block: 56px 66px; }
+            .brand-hero h1 { font-size: clamp(52px, 16vw, 78px); }
+            .brand-logo-frame { min-height: 300px; }
+            .brand-section-heading { align-items: start; flex-direction: column; }
+            .brand-system-grid { grid-template-columns: 1fr; }
+            .brand-process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .brand-process-card { padding: 20px 16px 22px 0; }
+            .brand-process-card + .brand-process-card { padding-left: 16px; }
+            .brand-process-card:nth-child(3) { border-top: 1px solid var(--line); border-left: 0; }
+            .brand-process-card:nth-child(4) { border-top: 1px solid var(--line); }
+            .brand-contact-grid { grid-template-columns: 1fr; gap: 32px; }
+        }
+        @media (max-width: 520px) {
+            .brand-header-inner { width: calc(100% - 40px); }
+            .brand-container { width: calc(100% - 40px); }
+            .brand-system-grid { gap: 20px; }
+            .brand-element { min-height: 250px; }
+            .brand-element-content { min-height: 196px; }
+            .brand-process-card span { margin-bottom: 18px; }
+            .brand-contact-form { grid-template-columns: 1fr; }
+            .brand-field-wide { grid-column: auto; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <a class="brand-wordmark" href="../../index.html" aria-label="Andy Woo, home">
-            <img src="../../logo/Andy%20ui%20ux%20Logo.png" alt="">
-        </a>
-        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false">☰</button>
-        <nav id="nav-menu" aria-label="Primary navigation">
-            <a href="../../index.html">Home</a>
-            <a href="../work.html">Work</a>
-            <a href="../../about/about.html.HTML">About</a>
-            <a href="#contact">Contact</a>
-            <a href="../../tutorials/tutorials.html">Tutorials</a>
-            <a href="https://github.com/Andywoo01/Astudio-profilo/">GitHub</a>
-            <a href="https://www.instagram.com/andyuiuxdesign01/">Instagram</a>
-            <a href="https://www.linkedin.com/in/andyuserexperience/">LinkedIn</a>
-            <a href="https://www.pinterest.com/Andyuiuxdesign/">Pinterest</a>
-            <button class="menu-close" type="button" aria-label="Close navigation">×</button>
-        </nav>
+    <header class="brand-page-header">
+        <div class="brand-header-inner">
+            <a class="brand-wordmark" href="../../index.html" aria-label="Andy Woo, home">
+                <img src="../../logo/Andy%20ui%20ux%20Logo.png" alt="">
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false">☰</button>
+            <nav id="nav-menu" aria-label="Primary navigation">
+                <a href="../../index.html">Home</a>
+                <a href="../work.html">Work</a>
+                <a href="../../about/about.html.HTML">About</a>
+                <a href="#contact">Contact</a>
+                <a href="../../tutorials/tutorials.html">Tutorials</a>
+                <a href="https://github.com/Andywoo01/Astudio-profilo/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.instagram.com/andyuiuxdesign01/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.linkedin.com/in/andyuserexperience/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.pinterest.com/Andyuiuxdesign/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+                <button class="menu-close" type="button" aria-label="Close navigation">×</button>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="brand-hero" aria-labelledby="brand-heading">
-            <p class="brand-eyebrow">Personal Brand</p>
-            <h2 id="brand-heading">Let’s create something meaningful.</h2>
-            <p>Have a project in mind or just want to say hello? Send me a message.</p>
+        <section class="brand-container brand-hero" aria-labelledby="brand-heading">
+            <div class="brand-hero-copy">
+                <p class="brand-eyebrow">Identity · UI/UX · Frontend</p>
+                <h1 id="brand-heading">Personal <span>Brand.</span></h1>
+                <p>A clear, thoughtful identity for Andy Woo, built to bring together design, frontend development, and project storytelling.</p>
+            </div>
+            <div class="brand-logo-frame">
+                <img src="../../logo/Andy%20ui%20ux%20Logo.png" alt="Andy UI UX Design personal brand logo">
+            </div>
         </section>
-<p></p>
-        <section class="brand-contact" id="contact" aria-labelledby="contact-heading">
-            <div class="brand-contact-copy">
-                <h2 id="contact-heading">Hope to hear from you!</h2>
+
+        <section class="brand-section" aria-labelledby="identity-title">
+            <div class="brand-container">
+                <div class="brand-section-heading">
+                    <div>
+                        <p class="brand-kicker">Visual identity</p>
+                        <h2 class="brand-section-title" id="identity-title">A system made to stay clear.</h2>
+                    </div>
+                    <p class="brand-section-intro">The same black-and-white palette, restrained typography, and simple geometry carry across the portfolio experience.</p>
+                </div>
+                <div class="brand-system-grid">
+                    <article class="brand-element">
+                        <p class="brand-element-label">Primary logo</p>
+                        <div class="brand-element-content"><img src="../../logo/Andy%20ui%20ux%20Logo.png" alt=""></div>
+                    </article>
+                    <article class="brand-element">
+                        <p class="brand-element-label">Monogram</p>
+                        <div class="brand-element-content"><div class="brand-monogram" aria-hidden="true">A</div></div>
+                    </article>
+                    <article class="brand-element">
+                        <p class="brand-element-label">Color palette</p>
+                        <div class="brand-element-content">
+                            <div class="brand-palette" aria-label="Black and white brand palette">
+                                <div class="brand-swatch"><span>#000000 · Ink</span></div>
+                                <div class="brand-swatch"><span>#FFFFFF · Paper</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="brand-element">
+                        <p class="brand-element-label">Typography</p>
+                        <div class="brand-element-content">
+                            <div class="brand-type-sample">
+                                <strong>Design with<br>people in mind.</strong>
+                                <span>Roboto · Open Sans · Clear hierarchy</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand-section" aria-labelledby="process-title">
+            <div class="brand-container">
+                <div class="brand-section-heading">
+                    <div>
+                        <p class="brand-kicker">How the identity works</p>
+                        <h2 class="brand-section-title" id="process-title">Built with purpose.</h2>
+                    </div>
+                    <p class="brand-section-intro">A focused process keeps the work recognizable, usable, and consistent from page to page.</p>
+                </div>
+                <div class="brand-process">
+                    <article class="brand-process-card"><span>01 / Understand</span><h3>Research</h3><p>Define the audience, goals, and the role the brand needs to play.</p></article>
+                    <article class="brand-process-card"><span>02 / Explore</span><h3>Direction</h3><p>Turn strategy into a clear visual language and repeatable system.</p></article>
+                    <article class="brand-process-card"><span>03 / Make</span><h3>Design</h3><p>Shape the logo, typography, spacing, and key interface elements.</p></article>
+                    <article class="brand-process-card"><span>04 / Refine</span><h3>Apply</h3><p>Use the system consistently across the portfolio and future work.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand-section brand-contact" id="contact" aria-labelledby="contact-heading">
+            <div class="brand-container brand-contact-grid">
+                <div class="brand-contact-copy">
+                    <p class="brand-kicker">Have a good one in mind?</p>
+                    <h2 class="brand-section-title" id="contact-heading">Let’s make something meaningful.</h2>
+                    <p>Have a project, a question, or just want to say hello? Send me a note—I’d be glad to hear from you.</p>
+                </div>
                 <form class="brand-contact-form" action="https://formspree.io/f/mwprbjgp" method="POST">
-                    <label for="firstname">First name</label>
-                    <input id="firstname" name="firstname" type="text" autocomplete="given-name" required>
-
-                    <label for="lastname">Last name</label>
-                    <input id="lastname" name="lastname" type="text" autocomplete="family-name" required>
-
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" autocomplete="email" required>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button class="brand-submit" type="submit">Send message</button>
+                    <div class="brand-field"><label for="firstname">First name</label><input id="firstname" name="firstname" type="text" autocomplete="given-name" required></div>
+                    <div class="brand-field"><label for="lastname">Last name</label><input id="lastname" name="lastname" type="text" autocomplete="family-name" required></div>
+                    <div class="brand-field brand-field-wide"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="brand-field brand-field-wide"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+                    <button class="brand-submit" type="submit">Send message <span aria-hidden="true">↗</span></button>
                 </form>
-                <a class="brand-submit brand-back" href="../work.html">Back</a>
-            </div>
-        </section>
-        <section class="section" aria-labelledby="recent-work-heading">
-            <h2 id="recent-work-heading" class="section-heading">Most Recent Work</h2>
-            <div class="carousel-controls" aria-label="Most recent work navigation">
-                <button class="carousel-scroll-button" type="button" aria-label="Scroll recent work left" aria-controls="personal-brand-recent-work-list">←</button>
-                <button class="carousel-scroll-button" type="button" aria-label="Scroll recent work right" aria-controls="personal-brand-recent-work-list">→</button>
-            </div>
-            <div id="personal-brand-recent-work-list" class="work-grid recent-work-grid recent-work-scroll recent-work-carousel" role="region" aria-label="Most recent work projects" tabindex="0">
-                <article class="work-item">
-                    <a href="../Ramen/ramen.html?v=20260520">
-                        <h3>Ramen</h3>
-                        <p>A ramen project page for portfolio work, visuals, and design details.</p>
-                    </a>
-                </article>
-                <article class="work-item">
-                    <a href="index.html">
-                        <h3>Personal Brand</h3>
-                        <p>A portfolio identity focused on UI/UX design, frontend development, and project storytelling.</p>
-                    </a>
-                </article>
             </div>
         </section>
     </main>
 
-    <footer class="footer-links">
-        <a href="../../index.html">Home</a>
-        <a href="../work.html">Work</a>
-        <a href="../../about/about.html.HTML">About</a>
-        <a href="#contact">Contact</a>
-        <a href="../../tutorials/tutorials.html">Tutorials</a>
-        <a href="https://github.com/Andywoo01/Astudio-profilo/">GitHub</a>
-        <a href="https://www.instagram.com/andyuiuxdesign01/">Instagram</a>
-        <a href="https://www.linkedin.com/in/andyuserexperience/">LinkedIn</a>
-        <a href="https://www.pinterest.com/Andyuiuxdesign/">Pinterest</a>
-        <p>andyuiuxdesign 2018-2026 All Rights Reserved</p>
+    <footer class="brand-footer">
+        <div class="brand-container brand-footer-inner">
+            <nav class="brand-footer-links" aria-label="Footer navigation">
+                <a href="../../index.html">Home</a>
+                <a href="../work.html">Work</a>
+                <a href="../../about/about.html.HTML">About</a>
+                <a href="#contact">Contact</a>
+                <a href="../../tutorials/tutorials.html">Tutorials</a>
+                <a href="https://github.com/Andywoo01/Astudio-profilo/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.instagram.com/andyuiuxdesign01/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.linkedin.com/in/andyuserexperience/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.pinterest.com/Andyuiuxdesign/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+            </nav>
+            <p>andyuiuxdesign©2018-2026 All Rights Reserved</p>
+        </div>
     </footer>
 </body>
 </html>
