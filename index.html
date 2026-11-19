@@ -91,6 +91,8 @@
       color: var(--ink);
       cursor: pointer;
     }
+    .menu-toggle[aria-expanded="true"] { font-size: 0; }
+    .menu-toggle[aria-expanded="true"]::after { content: "×"; font-size: 30px; line-height: 1; }
     .hero {
       display: grid;
       min-height: min(740px, calc(100svh - 76px));
@@ -141,7 +143,8 @@
     .project-visual { position: relative; display: grid; min-height: clamp(260px, 38vw, 460px); overflow: hidden; place-items: center; background: var(--soft); color: var(--ink); }
     .project-visual img { width: 100%; height: 100%; max-height: 460px; object-fit: cover; transition: transform 450ms ease; }
     .project-card:hover .project-visual img { transform: scale(1.035); }
-    .project-visual--identity { background: var(--ink); color: var(--paper); }
+    .project-visual--identity { background: var(--paper); color: var(--ink); }
+    .project-visual--identity img { width: min(72%, 360px); height: auto; max-height: none; object-fit: contain; }
     .identity-mark { padding: 24px; font-family: Roboto, sans-serif; font-size: clamp(46px, 8vw, 98px); font-weight: 700; letter-spacing: -0.09em; line-height: 0.85; text-align: center; }
     .identity-mark span { display: block; margin-top: 17px; font-family: "Open Sans", sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 0.23em; }
     .project-info { display: flex; align-items: start; justify-content: space-between; gap: 18px; padding-top: 17px; }
@@ -183,10 +186,10 @@
     @media (max-width: 760px) {
       .header-inner { min-height: 68px; }
       .menu-toggle { display: inline-flex; }
-      .site-nav { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; align-items: stretch; gap: 0; padding: 10px var(--gutter) 18px; border-bottom: 1px solid var(--line); background: var(--paper); }
+      .site-nav { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; align-items: center; justify-items: center; gap: 0; padding: 10px var(--gutter) 18px; border-bottom: 1px solid var(--line); background: var(--paper); text-align: center; }
       .site-nav.is-open { display: grid; }
-      .site-nav a { padding: 12px 0; border-bottom: 0; font-size: 13px; }
-      .site-nav .nav-social { display: grid; grid-template-columns: max-content; gap: 0; padding: 0; }
+      .site-nav a { justify-content: center; padding: 12px 0; border-bottom: 0; font-size: 13px; text-align: center; }
+      .site-nav .nav-social { display: grid; grid-template-columns: max-content; justify-items: center; gap: 0; padding: 0; }
       .site-nav .nav-social a { display: inline-flex; white-space: nowrap; }
       .hero { min-height: auto; grid-template-columns: 1fr 0.72fr; gap: 24px; padding-block: 68px 82px; }
       .hero-portrait { width: 100%; }
@@ -265,7 +268,7 @@
           </article>
           <article class="project-card">
             <a href="Astudio%20profilo/work/Personal%20Brand/index.html" aria-label="Explore the Personal Brand project">
-              <div class="project-visual project-visual--identity"><div class="identity-mark" aria-hidden="true">A<span>ANDY WOO · DESIGNER</span></div></div>
+              <div class="project-visual project-visual--identity"><img src="logo/Andy%20ui%20ux%20Logo.png" alt="Andy UI UX Design personal brand logo" loading="lazy"></div>
             </a>
             <div class="project-info">
               <div><p class="project-type">Identity · UI/UX · Frontend</p><h3 class="project-title">Personal Brand</h3></div>
