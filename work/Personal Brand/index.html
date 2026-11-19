@@ -18,7 +18,7 @@
         :root {
             --ink: #000;
             --paper: #fff;
-            --soft: #f5f5f3;
+            --soft: #fff;
             --line: #dededb;
             --muted: #666;
             --content: 1180px;
@@ -31,7 +31,7 @@
         a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
         a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
         h1, h2, h3, p { margin-top: 0; }
-        .brand-page-header { position: sticky; z-index: 10; top: 0; min-height: 76px; border-bottom: 1px solid var(--line); background: rgb(255 255 255 / 94%); backdrop-filter: blur(12px); }
+        .brand-page-header { position: sticky; z-index: 10; top: 0; min-height: 76px; background: rgb(255 255 255 / 94%); backdrop-filter: blur(12px); }
         .brand-header-inner { display: flex; width: min(100% - (var(--gutter) * 2), var(--content)); min-height: 76px; margin-inline: auto; align-items: center; justify-content: space-between; gap: 24px; }
         .brand-wordmark { display: inline-flex; flex: 0 0 auto; align-items: center; text-decoration: none; }
         .brand-wordmark img { width: 170px; height: auto; }
@@ -50,21 +50,34 @@
         .brand-hero-copy > p:not(.brand-eyebrow) { max-width: 470px; margin: 0 0 28px; color: var(--muted); font-size: clamp(15px, 1.4vw, 17px); }
         .brand-logo-frame { display: grid; width: 100%; min-height: 430px; place-items: center; background: var(--paper); }
         .brand-logo-frame img { width: min(82%, 520px); height: auto; }
-        .brand-section { padding-block: clamp(72px, 9vw, 120px); border-top: 1px solid var(--line); }
+        .brand-section { padding-block: clamp(72px, 9vw, 120px); }
         .brand-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: clamp(32px, 5vw, 62px); }
         .brand-section-title { max-width: 620px; margin: 0; font-family: Roboto, sans-serif; font-size: clamp(38px, 6vw, 68px); font-weight: 400; letter-spacing: -.055em; line-height: 1.03; }
         .brand-section-intro { max-width: 390px; margin: 0 0 4px; color: var(--muted); font-size: 14px; }
         .brand-system-grid { display: grid; grid-template-columns: 1fr; gap: clamp(18px, 3vw, 36px); }
-        .brand-element { min-height: 330px; border: 1px solid var(--line); background: var(--soft); }
-        .brand-element-label { display: flex; min-height: 54px; align-items: center; margin: 0; padding: 0 18px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+        .brand-element { min-height: 330px; background: var(--paper); }
+        .brand-element-label { display: flex; min-height: 54px; align-items: center; margin: 0; padding: 0 18px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
         .brand-element-content { display: grid; min-height: 276px; padding: 30px; place-items: center; }
         .brand-element-content img { width: min(86%, 430px); }
         .brand-monogram { display: grid; width: 170px; height: 170px; place-items: center; border: 1px solid var(--ink); font-family: Roboto, sans-serif; font-size: 104px; font-weight: 700; line-height: 1; }
         .brand-palette { display: grid; width: 100%; grid-template-columns: repeat(2, 1fr); align-self: stretch; }
-        .brand-swatch { display: flex; align-items: end; min-height: 220px; padding: 16px; border: 1px solid var(--line); background: var(--paper); }
+        .brand-swatch { display: flex; align-items: end; min-height: 220px; padding: 16px; background: var(--paper); }
         .brand-swatch:first-child { background: var(--ink); color: var(--paper); }
         .brand-swatch:last-child { background: var(--paper); color: var(--ink); }
         .brand-swatch span { font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+        .brand-contact-grid { display: grid; grid-template-columns: 1fr; justify-items: center; gap: 32px; }
+        .brand-contact-copy .brand-kicker { margin-bottom: 12px; color: var(--muted); }
+        .brand-contact-copy { text-align: center; }
+        .brand-contact-copy .brand-section-title { max-width: 430px; margin: 0 auto 18px; }
+        .brand-contact-copy > p:not(.brand-kicker) { max-width: 360px; margin: 0 auto 24px; color: var(--muted); }
+        .brand-contact-form { display: grid; width: min(100%, 520px); grid-template-columns: 1fr; justify-self: center; gap: 18px 16px; }
+        .brand-field { display: grid; gap: 7px; }
+        .brand-field-wide { grid-column: 1 / -1; }
+        .brand-field label { font-size: 11px; font-weight: 700; }
+        .brand-field input, .brand-field textarea { width: 100%; min-height: 46px; padding: 11px 12px; border: 1px solid #c9c9c5; border-radius: 0; background: var(--paper); color: var(--ink); font: inherit; font-size: 13px; }
+        .brand-field textarea { min-height: 128px; resize: vertical; }
+        .brand-submit { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 16px; justify-self: start; padding: 12px 18px; border: 1px solid var(--ink); border-radius: 0; background: var(--ink); color: var(--paper); font-size: 12px; font-weight: 700; text-decoration: none; cursor: pointer; transition: background 160ms ease, color 160ms ease; }
+        .brand-submit:hover { background: var(--paper); color: var(--ink); }
         .brand-type-sample { align-self: stretch; width: 100%; }
         .brand-type-sample strong { display: block; font-family: Roboto, sans-serif; font-size: clamp(34px, 5vw, 58px); font-weight: 500; letter-spacing: -.055em; line-height: 1; }
         .brand-type-sample span { display: block; margin-top: 24px; color: var(--muted); font-size: 13px; }
@@ -74,18 +87,6 @@
         .brand-process-card span { display: block; margin-bottom: 30px; color: var(--muted); font-size: 11px; }
         .brand-process-card h3 { margin: 0 0 9px; font-family: Roboto, sans-serif; font-size: 20px; font-weight: 500; }
         .brand-process-card p { max-width: 250px; margin: 0; color: var(--muted); font-size: 13px; }
-        .brand-contact { background: var(--soft); }
-        .brand-contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(36px, 8vw, 110px); }
-        .brand-contact-copy .brand-section-title { max-width: 430px; margin-bottom: 18px; }
-        .brand-contact-copy > p:last-child { max-width: 360px; margin: 0; color: var(--muted); }
-        .brand-contact-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 16px; }
-        .brand-field { display: grid; gap: 7px; }
-        .brand-field-wide { grid-column: 1 / -1; }
-        .brand-field label { font-size: 11px; font-weight: 700; }
-        .brand-field input, .brand-field textarea { width: 100%; min-height: 46px; padding: 11px 12px; border: 1px solid #c9c9c5; border-radius: 0; background: var(--paper); color: var(--ink); font: inherit; font-size: 13px; }
-        .brand-field textarea { min-height: 128px; resize: vertical; }
-        .brand-submit { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 16px; justify-self: start; padding: 12px 18px; border: 1px solid var(--ink); border-radius: 0; background: var(--ink); color: var(--paper); font-size: 12px; font-weight: 700; cursor: pointer; }
-        .brand-submit:hover { background: var(--paper); color: var(--ink); }
         .brand-footer { border-top: 1px solid var(--line); padding-block: 36px 26px; }
         .brand-footer-inner { display: grid; justify-items: center; gap: 20px; text-align: center; }
         .brand-footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; }
@@ -94,8 +95,8 @@
         .brand-footer-inner p { margin: 0; color: var(--muted); font-size: 10px; }
         @media (max-width: 760px) {
             .brand-header-inner { min-height: 68px; }
-            .menu-toggle { display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
-            #nav-menu { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; gap: 0; padding: 10px var(--gutter) 18px; border-bottom: 1px solid var(--line); background: var(--paper); }
+            .menu-toggle { display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; background: var(--paper); color: var(--ink); }
+            #nav-menu { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; gap: 0; padding: 10px var(--gutter) 18px; background: var(--paper); }
             #nav-menu.active, #nav-menu.open { display: grid; }
             #nav-menu a { padding: 12px 0; text-align: center; }
             .brand-hero { min-height: auto; grid-template-columns: 1fr; gap: 38px; padding-block: 56px 66px; }
@@ -108,7 +109,6 @@
             .brand-process-card + .brand-process-card { padding-left: 16px; }
             .brand-process-card:nth-child(3) { border-top: 1px solid var(--line); border-left: 0; }
             .brand-process-card:nth-child(4) { border-top: 1px solid var(--line); }
-            .brand-contact-grid { grid-template-columns: 1fr; gap: 32px; }
         }
         @media (max-width: 520px) {
             .brand-header-inner { width: calc(100% - 40px); }
@@ -117,8 +117,6 @@
             .brand-element { min-height: 250px; }
             .brand-element-content { min-height: 196px; }
             .brand-process-card span { margin-bottom: 18px; }
-            .brand-contact-form { grid-template-columns: 1fr; }
-            .brand-field-wide { grid-column: auto; }
         }
     </style>
 </head>
@@ -156,9 +154,7 @@
                 <div class="brand-section-heading">
                     <div>
                         <p class="brand-kicker">Visual identity</p>
-                        <h2 class="brand-section-title" id="identity-title">A system made to stay clear.</h2>
                     </div>
-                    <p class="brand-section-intro">The same black-and-white palette, restrained typography, and simple geometry carry across the portfolio experience.</p>
                 </div>
                 <div class="brand-system-grid">
                     <article class="brand-element">
@@ -173,6 +169,24 @@
                 </div>
             </div>
         </section>
+
+        <section class="brand-section brand-contact" id="contact" aria-labelledby="contact-heading">
+            <div class="brand-container brand-contact-grid">
+                <div class="brand-contact-copy">
+                    <p class="brand-kicker">Have a good one in mind?</p>
+                    <h2 class="brand-section-title" id="contact-heading">Let’s make something meaningful.</h2>
+                    <p>Have a project, a question, or just want to say hello? Send me a note—I’d be glad to hear from you.</p>
+                </div>
+                <form class="brand-contact-form" action="https://formspree.io/f/mwprbjgp" method="POST">
+                    <div class="brand-field"><label for="firstname">First name</label><input id="firstname" name="firstname" type="text" autocomplete="given-name" required></div>
+                    <div class="brand-field"><label for="lastname">Last name</label><input id="lastname" name="lastname" type="text" autocomplete="family-name" required></div>
+                    <div class="brand-field brand-field-wide"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="brand-field brand-field-wide"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+                    <button class="brand-submit" type="submit">Send message <span aria-hidden="true">↗</span></button>
+                </form>
+            </div>
+        </section>
+
     </main>
 </body>
 </html>
