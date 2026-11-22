@@ -87,6 +87,9 @@
         .brand-field textarea { min-height: 128px; resize: vertical; }
         .brand-submit { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 16px; justify-self: start; padding: 12px 18px; border: 1px solid var(--ink); border-radius: 0; background: var(--ink); color: var(--paper); font-size: 12px; font-weight: 700; text-decoration: none; cursor: pointer; transition: background 160ms ease, color 160ms ease; }
         .brand-submit:hover { background: var(--paper); color: var(--ink); }
+        .brand-form-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+        .brand-reset { background: var(--ink); color: var(--paper); }
+        .brand-reset:hover { background: var(--paper); color: var(--ink); }
         .brand-type-sample { align-self: stretch; width: 100%; }
         .brand-type-sample strong { display: block; font-family: Roboto, sans-serif; font-size: clamp(34px, 5vw, 58px); font-weight: 500; letter-spacing: -.055em; line-height: 1; }
         .brand-type-sample span { display: block; margin-top: 24px; color: var(--muted); font-size: 13px; }
@@ -208,7 +211,10 @@
                     <div class="brand-field"><label for="lastname">Last name</label><input id="lastname" name="lastname" type="text" autocomplete="family-name" required></div>
                     <div class="brand-field brand-field-wide"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
                     <div class="brand-field brand-field-wide"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
-                    <button class="brand-submit" type="submit">Send message <span aria-hidden="true">↗</span></button>
+                    <div class="brand-form-buttons">
+                        <button class="brand-submit" type="submit">Send message</button>
+                        <button class="brand-submit brand-reset" type="reset">Reset</button>
+                    </div>
                 </form>
             </div>
         </section>

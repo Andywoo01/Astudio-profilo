@@ -568,10 +568,6 @@ img {
     background: #3f3f3f;
 }
 
-.contact-form button[type="reset"]:hover {
-    background: #f0f0f0;
-}
-
 .back-button-container {
     margin: 24px 0;
     text-align: center;
