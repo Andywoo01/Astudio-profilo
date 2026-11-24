@@ -99,6 +99,30 @@
         .brand-process-card span { display: block; margin-bottom: 30px; color: var(--muted); font-size: 11px; }
         .brand-process-card h3 { margin: 0 0 9px; font-family: Roboto, sans-serif; font-size: 20px; font-weight: 500; }
         .brand-process-card p { max-width: 250px; margin: 0; color: var(--muted); font-size: 13px; }
+        .brand-sitemap { border-top: 1px solid var(--line); background: #f8f8f6; }
+        .brand-sitemap-heading { margin-bottom: clamp(42px, 6vw, 72px); }
+        .brand-sitemap-heading .brand-kicker { margin-bottom: 12px; color: var(--muted); }
+        .brand-sitemap-map { width: 100%; }
+        .brand-sitemap-entry { display: grid; max-width: 260px; min-height: 80px; margin: 0 auto 68px; place-items: center; border: 1px solid #1b1b1b; background: var(--paper); text-align: center; }
+        .brand-sitemap-entry small { display: block; margin-bottom: 2px; color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+        .brand-sitemap-entry strong { font-family: Roboto, sans-serif; font-size: 24px; font-weight: 500; }
+        .brand-sitemap-entry::after { position: absolute; width: 1px; height: 68px; margin-top: 148px; background: #1b1b1b; content: ""; }
+        .brand-sitemap-entry { position: relative; }
+        .brand-sitemap-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 2.3vw, 28px); }
+        .brand-sitemap-column { position: relative; }
+        .brand-sitemap-node { display: flex; min-height: 58px; align-items: center; justify-content: center; border: 1px solid #1b1b1b; background: var(--paper); font-size: 14px; font-weight: 700; text-align: center; text-decoration: none; }
+        .brand-sitemap-node:hover { background: var(--ink); color: var(--paper); }
+        .brand-sitemap-children { display: grid; margin-top: 34px; gap: 16px; }
+        .brand-sitemap-children .brand-sitemap-node { min-height: 48px; justify-content: flex-start; padding-inline: 18px; font-size: 12px; font-weight: 500; }
+        .brand-sitemap-column:not(:last-child) .brand-sitemap-children::before { position: absolute; top: 58px; left: 50%; width: calc(100% + clamp(14px, 2.3vw, 28px)); height: 1px; background: #1b1b1b; content: ""; }
+        .brand-sitemap-column:first-child .brand-sitemap-children { border-left: 1px solid #1b1b1b; }
+        .brand-sitemap-column:first-child .brand-sitemap-children .brand-sitemap-node { width: calc(100% - 18px); margin-left: 18px; }
+        .brand-sitemap-column:nth-child(n + 3) .brand-sitemap-children { border-left: 1px solid #1b1b1b; }
+        .brand-sitemap-column:nth-child(n + 3) .brand-sitemap-children .brand-sitemap-node { width: calc(100% - 18px); margin-left: 18px; }
+        .brand-sitemap-column:nth-child(2) .brand-sitemap-children { border-left: 1px solid #1b1b1b; }
+        .brand-sitemap-column:nth-child(2) .brand-sitemap-children .brand-sitemap-node { width: calc(100% - 18px); margin-left: 18px; }
+        .brand-sitemap-children .brand-sitemap-node { position: relative; }
+        .brand-sitemap-children .brand-sitemap-node::before { position: absolute; top: 50%; left: -18px; width: 18px; height: 1px; background: #1b1b1b; content: ""; }
         .brand-footer { border-top: 1px solid var(--line); padding-block: 36px 26px; }
         .brand-footer-inner { display: grid; justify-items: center; gap: 20px; text-align: center; }
         .brand-footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; }
@@ -121,6 +145,8 @@
             .brand-process-card + .brand-process-card { padding-left: 16px; }
             .brand-process-card:nth-child(3) { border-top: 1px solid var(--line); border-left: 0; }
             .brand-process-card:nth-child(4) { border-top: 1px solid var(--line); }
+            .brand-sitemap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 38px; }
+            .brand-sitemap-column:not(:last-child) .brand-sitemap-children::before { display: none; }
         }
         @media (max-width: 520px) {
             .brand-header-inner { width: calc(100% - 40px); }
@@ -130,6 +156,9 @@
             .brand-element-content { min-height: 196px; }
             .brand-logo-grid { grid-template-columns: 1fr; }
             .brand-process-card span { margin-bottom: 18px; }
+            .brand-sitemap-entry { max-width: 220px; }
+            .brand-sitemap-grid { grid-template-columns: 1fr; }
+            .brand-sitemap-column .brand-sitemap-children { margin-bottom: 4px; }
         }
     </style>
 </head>
@@ -199,6 +228,54 @@
                             </div>
                         </div>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand-section brand-sitemap" aria-labelledby="sitemap-heading">
+            <div class="brand-container">
+                <div class="brand-section-heading brand-sitemap-heading">
+                    <div>
+                        <h2 class="brand-section-title" id="sitemap-heading">Sitemap</h2>
+                    </div>
+                </div>
+                <div class="brand-sitemap-map" aria-label="Personal brand website sitemap">
+                    <a class="brand-sitemap-entry" href="../../index.html">
+                        <span>
+                            <small>Entry point</small>
+                            <strong>Homepage</strong>
+                        </span>
+                    </a>
+                    <div class="brand-sitemap-grid">
+                        <div class="brand-sitemap-column">
+                            <a class="brand-sitemap-node" href="../../tutorials/tutorials.html">Coding Platform</a>
+                            <div class="brand-sitemap-children">
+                                <a class="brand-sitemap-node" href="https://github.com/Andywoo01/Astudio-profilo/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="brand-sitemap-column">
+                            <a class="brand-sitemap-node" href="../work.html">Work</a>
+                            <div class="brand-sitemap-children">
+                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
+                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
+                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
+                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
+                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
+                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
+                            </div>
+                        </div>
+                        <div class="brand-sitemap-column">
+                            <a class="brand-sitemap-node" href="../../index.html">Social Media</a>
+                            <div class="brand-sitemap-children">
+                                <a class="brand-sitemap-node" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                                <a class="brand-sitemap-node" href="https://www.instagram.com/andyuiuxdesign01/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                <a class="brand-sitemap-node" href="https://www.pinterest.com/Andyuiuxdesign/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+                            </div>
+                        </div>
+                        <div class="brand-sitemap-column">
+                            <a class="brand-sitemap-node" href="#contact">Contact</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
