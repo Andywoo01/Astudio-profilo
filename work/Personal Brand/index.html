@@ -100,7 +100,7 @@
         .brand-process-card h3 { margin: 0 0 9px; font-family: Roboto, sans-serif; font-size: 20px; font-weight: 500; }
         .brand-process-card p { max-width: 250px; margin: 0; color: var(--muted); font-size: 13px; }
         .brand-sitemap { border-top: 1px solid var(--line); background: #f8f8f6; }
-        .brand-sitemap-heading { margin-bottom: clamp(42px, 6vw, 72px); }
+        .brand-sitemap-heading { justify-content: center; margin-bottom: clamp(42px, 6vw, 72px); text-align: center; }
         .brand-sitemap-heading .brand-kicker { margin-bottom: 12px; color: var(--muted); }
         .brand-sitemap-map { width: 100%; }
         .brand-sitemap-entry { display: grid; max-width: 260px; min-height: 80px; margin: 0 auto 68px; place-items: center; border: 1px solid #1b1b1b; background: var(--paper); text-align: center; }
@@ -111,7 +111,6 @@
         .brand-sitemap-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 2.3vw, 28px); }
         .brand-sitemap-column { position: relative; }
         .brand-sitemap-node { display: flex; min-height: 58px; align-items: center; justify-content: center; border: 1px solid #1b1b1b; background: var(--paper); font-size: 14px; font-weight: 700; text-align: center; text-decoration: none; }
-        .brand-sitemap-node:hover { background: var(--ink); color: var(--paper); }
         .brand-sitemap-children { display: grid; margin-top: 34px; gap: 16px; }
         .brand-sitemap-children .brand-sitemap-node { min-height: 48px; justify-content: flex-start; padding-inline: 18px; font-size: 12px; font-weight: 500; }
         .brand-sitemap-column:not(:last-child) .brand-sitemap-children::before { position: absolute; top: 58px; left: 50%; width: calc(100% + clamp(14px, 2.3vw, 28px)); height: 1px; background: #1b1b1b; content: ""; }
@@ -240,40 +239,39 @@
                     </div>
                 </div>
                 <div class="brand-sitemap-map" aria-label="Personal brand website sitemap">
-                    <a class="brand-sitemap-entry" href="../../index.html">
+                    <div class="brand-sitemap-entry">
                         <span>
-                            <small>Entry point</small>
                             <strong>Homepage</strong>
                         </span>
-                    </a>
+                    </div>
                     <div class="brand-sitemap-grid">
                         <div class="brand-sitemap-column">
-                            <a class="brand-sitemap-node" href="../../tutorials/tutorials.html">Coding Platform</a>
+                            <div class="brand-sitemap-node">Coding Platform</div>
                             <div class="brand-sitemap-children">
-                                <a class="brand-sitemap-node" href="https://github.com/Andywoo01/Astudio-profilo/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <div class="brand-sitemap-node">GitHub</div>
                             </div>
                         </div>
                         <div class="brand-sitemap-column">
-                            <a class="brand-sitemap-node" href="../work.html">Work</a>
+                            <div class="brand-sitemap-node">Work</div>
                             <div class="brand-sitemap-children">
-                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
-                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
-                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
-                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
-                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
-                                <a class="brand-sitemap-node" href="../work.html">Case Studies</a>
+                                <div class="brand-sitemap-node">Case Studies</div>
+                                <div class="brand-sitemap-node">Case Studies</div>
+                                <div class="brand-sitemap-node">Case Studies</div>
+                                <div class="brand-sitemap-node">Case Studies</div>
+                                <div class="brand-sitemap-node">Case Studies</div>
+                                <div class="brand-sitemap-node">Case Studies</div>
                             </div>
                         </div>
                         <div class="brand-sitemap-column">
-                            <a class="brand-sitemap-node" href="../../index.html">Social Media</a>
+                            <div class="brand-sitemap-node">Social Media</div>
                             <div class="brand-sitemap-children">
-                                <a class="brand-sitemap-node" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
-                                <a class="brand-sitemap-node" href="https://www.instagram.com/andyuiuxdesign01/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                                <a class="brand-sitemap-node" href="https://www.pinterest.com/Andyuiuxdesign/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+                                <div class="brand-sitemap-node">Facebook</div>
+                                <div class="brand-sitemap-node">Instagram</div>
+                                <div class="brand-sitemap-node">Pinterest</div>
                             </div>
                         </div>
                         <div class="brand-sitemap-column">
-                            <a class="brand-sitemap-node" href="#contact">Contact</a>
+                            <div class="brand-sitemap-node">Contact</div>
                         </div>
                     </div>
                 </div>
