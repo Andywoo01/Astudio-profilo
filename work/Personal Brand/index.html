@@ -58,6 +58,13 @@
         .brand-section-title { max-width: 620px; margin: 0; font-family: Roboto, sans-serif; font-size: clamp(38px, 6vw, 68px); font-weight: 400; letter-spacing: -.055em; line-height: 1.03; }
         .brand-section-intro { max-width: 390px; margin: 0 0 4px; color: var(--muted); font-size: 14px; }
         .brand-system-grid { display: grid; grid-template-columns: 1fr; gap: clamp(18px, 3vw, 36px); }
+        .brand-tools { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(32px, 8vw, 120px); align-items: center; border-top: 1px solid var(--line); }
+        .brand-tools-heading { display: block; margin: 0; text-align: center; }
+        .brand-tools-heading .brand-kicker { margin-bottom: 12px; }
+        .brand-tools-heading .brand-section-title { max-width: none; font-size: clamp(20px, 2.4vw, 30px); font-weight: 800; letter-spacing: 0; }
+        .brand-tools-grid { display: grid; margin: 0; padding: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px clamp(24px, 5vw, 64px); list-style: none; }
+        .brand-tool { min-height: 0; padding: 0; color: var(--muted); font-size: 15px; line-height: 1.65; text-align: center; }
+        .brand-tool h3 { margin: 0; font-family: "Open Sans", sans-serif; font-size: 15px; font-weight: 400; line-height: 1.65; }
         .brand-element { min-height: 330px; background: var(--paper); }
         .brand-element-label { display: flex; min-height: 54px; align-items: center; margin: 0; padding: 0 18px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
         .brand-element-content { display: grid; min-height: 276px; padding: 30px; place-items: center; }
@@ -137,6 +144,7 @@
             .brand-logo-frame { min-height: 300px; grid-column: 1; }
             .brand-section-heading { align-items: start; flex-direction: column; }
             .brand-system-grid { grid-template-columns: 1fr; }
+            .brand-tools { grid-template-columns: 1fr; gap: 28px; }
             .brand-process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
             .brand-process-card { padding: 20px 16px 22px 0; }
             .brand-process-card + .brand-process-card { padding-left: 16px; }
@@ -149,6 +157,9 @@
             .brand-header-inner { width: calc(100% - 40px); }
             .brand-container { width: calc(100% - 40px); }
             .brand-system-grid { gap: 20px; }
+            .brand-tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 20px; }
+            .brand-tool { min-height: 0; gap: 8px; padding: 0; }
+            .brand-tool h3 { font-size: 15px; }
             .brand-element { min-height: 250px; }
             .brand-element-content { min-height: 196px; }
             .brand-logo-grid { grid-template-columns: 1fr; }
@@ -190,12 +201,28 @@
 
         <section class="brand-section" aria-labelledby="identity-title">
             <div class="brand-container">
+                <section class="brand-tools" aria-labelledby="process-software-heading">
+                    <div class="brand-section-heading brand-tools-heading">
+                        <div>
+                            <p class="brand-kicker" id="process-software-heading">Process &amp; Software</p>
+                        </div>
+                    </div>
+                    <ul class="brand-tools-grid">
+                        <li class="brand-tool"><h3>User Research</h3></li>
+                        <li class="brand-tool"><h3>Wireframe</h3></li>
+                        <li class="brand-tool"><h3>Typography</h3></li>
+                        <li class="brand-tool"><h3>Figma</h3></li>
+                        <li class="brand-tool"><h3>Sketch</h3></li>
+                        <li class="brand-tool"><h3>Color Theory</h3></li>
+                    </ul>
+                </section>
                 <div class="brand-section-heading">
                     <div>
                         <p class="brand-kicker">Logo Concepts</p>
                          <img src="logo/Logo%20concepts.png" alt="Collection of Andy UI UX Design logo concepts">
                     </div>
                 </div>
+
                 <div class="brand-system-grid">
                     <article class="brand-element brand-element--palette">
                         <p class="brand-element-label">Color palette</p>
@@ -245,7 +272,7 @@
                 <img class="brand-sitemap-image" src="site_map2.png" alt="Personal brand website sitemap">
             </div>
         </section>
-       
+       <h2>Wireframe</h2>
         <section class="brand-section brand-contact" id="contact" aria-labelledby="contact-heading">
             <div class="brand-container brand-contact-grid">
                 <div class="brand-contact-copy">
